@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設定頁面使用 - ESL學習平台教學網站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 頂部導航 -->
+        <nav class="top-nav">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-home"></i>
+                教學網站首頁
+            </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- 主要內容 -->
+        <main class="main-content">
+            <!-- 頁面標題 -->
+            <header class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">首頁</a>
+                    <span>/</span>
+                    <a href="../index.html#frontend">前台操作</a>
+                    <span>/</span>
+                    <span>設定頁面使用</span>
+                </div>
+                <h1><i class="fas fa-cog"></i> 設定頁面使用教學</h1>
+                <div class="page-meta">
+                    <span class="tag"><i class="fas fa-bullseye"></i> 學習目標：學會調整個人設定，優化學習環境和體驗</span>
+                    <span class="tag"><i class="fas fa-users"></i> 適用對象：學生、家長、老師</span>
+                </div>
+            </header>
+
+            <!-- 設定頁面功能介紹 -->
+            <section class="content-section">
+                <h2><i class="fas fa-cog"></i> 設定頁面功能介紹</h2>
+                <div class="topic-card">
+                    <p>設定頁面讓您可以客製化學習環境，包括：</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-language"></i>
+                            <span>語言介面設定</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-volume-up"></i>
+                            <span>音頻播放控制</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-palette"></i>
+                            <span>視覺主題選擇</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-cog"></i>
+                            <span>學習偏好設定</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 進入設定頁面 -->
+            <section class="content-section">
+                <h2><i class="fas fa-rocket"></i> 進入設定頁面</h2>
+                
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> A. 設定頁面入口</h3>
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>設定頁面入口位置截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                    
+                    <div class="method-list">
+                        <div class="method-item">
+                            <div class="method-header">
+                                <i class="fas fa-home"></i>
+                                <h4>方法一：從首頁進入</h4>
+                            </div>
+                            <div class="method-steps">
+                                <span class="step">首頁</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="step">點擊「⚙️ 設定」按鈕</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="step">進入設定頁面</span>
+                            </div>
+                        </div>
+                        
+                        <div class="method-item">
+                            <div class="method-header">
+                                <i class="fas fa-globe"></i>
+                                <h4>方法二：從任何頁面進入</h4>
+                            </div>
+                            <div class="method-steps">
+                                <span class="step">任何頁面</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="step">尋找設定圖示 ⚙️</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="step">點擊進入</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-box">
+                        <h4><i class="fas fa-mobile-alt"></i> 操作範例：小明的操作</h4>
+                        <div class="example-steps">
+                            <div class="example-step">
+                                <span class="step-num">1</span>
+                                <span>小明在首頁看到右上角有個齒輪圖示 ⚙️</span>
+                            </div>
+                            <div class="example-step">
+                                <span class="step-num">2</span>
+                                <span>他點擊齒輪圖示</span>
+                            </div>
+                            <div class="example-step">
+                                <span class="step-num">3</span>
+                                <span>頁面跳轉到「個人設定」頁面</span>
+                            </div>
+                            <div class="example-step">
+                                <span class="step-num">4</span>
+                                <span>可以看到各種設定選項排列整齊</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 音頻設定 -->
+            <section class="content-section">
+                <h2><i class="fas fa-volume-up"></i> 音頻設定詳細操作</h2>
+                
+                <!-- 音量控制 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> B. 音量控制</h3>
+                    <div class="setting-info">
+                        <p><strong>設定位置</strong>：音頻設定 → 主音量</p>
+                        <p><strong>調整方式</strong>：拖動滑桿或點擊音量按鈕</p>
+                    </div>
+                    
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>音量控制介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="detailed-example">
+                        <h4><i class="fas fa-volume-down"></i> 音量調整實例</h4>
+                        <div class="scenario">
+                            <strong>情境：</strong>家長陪孩子晚上學習，需要調低音量
+                        </div>
+                        
+                        <div class="operation-steps">
+                            <h5>操作步驟：</h5>
+                            <div class="step-grid">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">進入設定頁面</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">找到「音頻設定」區塊</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">看到「主音量」滑桿（目前在80%位置）</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">用滑鼠拖動滑桿向左移動至30%</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">或點擊滑桿左側將音量調低</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">即時聽到音量變化</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">7</div>
+                                    <div class="step-content">點擊「儲存」確認變更</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-box">
+                            <h5><i class="fas fa-check-circle"></i> 結果</h5>
+                            <p>所有音效（點讀、遊戲、單字發音）都變為30%音量</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 播放速度設定 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> C. 播放速度設定</h3>
+                    <div class="setting-info">
+                        <p><strong>設定位置</strong>：音頻設定 → 播放速度</p>
+                        <p><strong>可選速度</strong>：0.5x, 0.8x, 1.0x, 1.2x, 1.5x</p>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>播放速度設定介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="detailed-example">
+                        <h4><i class="fas fa-tachometer-alt"></i> 速度調整案例</h4>
+                        <div class="scenario">
+                            <strong>情境：</strong>初學者覺得發音太快，想要慢速學習
+                        </div>
+
+                        <div class="operation-steps">
+                            <h5>具體操作：</h5>
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">點擊「播放速度」選項</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">看到目前設定是「1.0x 正常速度」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        點擊下拉選單看到所有選項：
+                                        <div class="speed-options">
+                                            <div class="speed-option recommended">0.5x 非常慢速 ⭐推薦初學者</div>
+                                            <div class="speed-option recommended">0.8x 慢速 ⭐推薦學習中</div>
+                                            <div class="speed-option">1.0x 正常速度（預設）</div>
+                                            <div class="speed-option">1.2x 快速</div>
+                                            <div class="speed-option recommended">1.5x 非常快速 ⭐挑戰高手</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">選擇「0.8x 慢速」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">點擊「試聽」按鈕測試效果</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">滿意後點擊「應用」</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-box">
+                            <h5><i class="fas fa-headphones"></i> 測試結果</h5>
+                            <ul>
+                                <li>進入點讀功能測試</li>
+                                <li>點擊單字「beautiful」</li>
+                                <li>聽到較慢的清晰發音：「beau-ti-ful」</li>
+                                <li>更容易跟讀和理解</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 視覺主題設定 -->
+            <section class="content-section">
+                <h2><i class="fas fa-palette"></i> 視覺主題設定</h2>
+                
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> D. 主題選擇</h3>
+                    
+                    <div class="theme-grid">
+                        <div class="theme-option">
+                            <div class="theme-icon">🌞</div>
+                            <h4>明亮主題</h4>
+                            <p>白色背景</p>
+                        </div>
+                        <div class="theme-option">
+                            <div class="theme-icon">🌙</div>
+                            <h4>深色主題</h4>
+                            <p>深色背景</p>
+                        </div>
+                        <div class="theme-option">
+                            <div class="theme-icon">🌊</div>
+                            <h4>海洋主題</h4>
+                            <p>藍色調</p>
+                        </div>
+                        <div class="theme-option">
+                            <div class="theme-icon">🌸</div>
+                            <h4>粉色主題</h4>
+                            <p>溫馨粉色</p>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>主題選擇介面和預覽截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="detailed-example">
+                        <h4><i class="fas fa-paint-brush"></i> 主題變更實例</h4>
+                        <div class="scenario">
+                            <strong>情境：</strong>學生覺得白色背景太刺眼，想換成深色主題
+                        </div>
+
+                        <div class="operation-steps">
+                            <h5>操作流程：</h5>
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">在設定頁面找到「外觀設定」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">看到「主題選擇」選項</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">目前選中：🌞 明亮主題</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        點擊查看所有主題預覽：
+                                        <div class="theme-previews">
+                                            <div class="preview-item">
+                                                <strong>🌞 明亮主題</strong> - 白色背景，黑色文字<br>
+                                                📱 預覽：[白底黑字的範例卡片]
+                                            </div>
+                                            <div class="preview-item">
+                                                <strong>🌙 深色主題</strong> - 深灰背景，白色文字<br>
+                                                📱 預覽：[深色底白字的範例卡片]
+                                            </div>
+                                            <div class="preview-item">
+                                                <strong>🌊 海洋主題</strong> - 藍色漸層，深藍文字<br>
+                                                📱 預覽：[藍色調的範例卡片]
+                                            </div>
+                                            <div class="preview-item">
+                                                <strong>🌸 粉色主題</strong> - 淡粉背景，深色文字<br>
+                                                📱 預覽：[粉色調的範例卡片]
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">點擊「🌙 深色主題」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">頁面立即變更為深色模式</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">7</div>
+                                    <div class="step-content">
+                                        檢查各個元素顏色變化：
+                                        <ul class="color-changes">
+                                            <li>背景：白色 → 深灰色</li>
+                                            <li>文字：黑色 → 白色</li>
+                                            <li>按鈕：保持良好對比度</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">8</div>
+                                    <div class="step-content">滿意後點擊「儲存設定」</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-box">
+                            <h5><i class="fas fa-magic"></i> 變更效果</h5>
+                            <ul>
+                                <li>整個平台介面變為深色調</li>
+                                <li>保護眼睛，減少疲勞</li>
+                                <li>夜間使用更舒適</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 語言與地區設定 -->
+            <section class="content-section">
+                <h2><i class="fas fa-globe"></i> 語言與地區設定</h2>
+                
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> E. 介面語言設定</h3>
+                    
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>語言設定介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="detailed-example">
+                        <h4><i class="fas fa-language"></i> 語言切換案例</h4>
+                        <div class="scenario">
+                            <strong>情境：</strong>國際學校老師需要英文介面教學
+                        </div>
+
+                        <div class="operation-steps">
+                            <h5>詳細步驟：</h5>
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">在設定頁面找到「語言設定」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">看到目前設定：🇹🇼 繁體中文</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        點擊語言選擇下拉選單：
+                                        <div class="language-options">
+                                            <div class="lang-option current">🇹🇼 繁體中文 (目前選中)</div>
+                                            <div class="lang-option">🇨🇳 简体中文</div>
+                                            <div class="lang-option">🇺🇸 English</div>
+                                            <div class="lang-option">🇯🇵 日本語</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">選擇「🇺🇸 English」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">系統提示：「切換語言將重新載入頁面，是否繼續？」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">點擊「確認」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">7</div>
+                                    <div class="step-content">頁面重新載入</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">8</div>
+                                    <div class="step-content">
+                                        所有介面文字變更為英文：
+                                        <div class="translation-examples">
+                                            <div class="translation-item">
+                                                <span class="before">"設定"</span>
+                                                <i class="fas fa-arrow-right"></i>
+                                                <span class="after">"Settings"</span>
+                                            </div>
+                                            <div class="translation-item">
+                                                <span class="before">"音頻設定"</span>
+                                                <i class="fas fa-arrow-right"></i>
+                                                <span class="after">"Audio Settings"</span>
+                                            </div>
+                                            <div class="translation-item">
+                                                <span class="before">"主音量"</span>
+                                                <i class="fas fa-arrow-right"></i>
+                                                <span class="after">"Master Volume"</span>
+                                            </div>
+                                            <div class="translation-item">
+                                                <span class="before">"儲存"</span>
+                                                <i class="fas fa-arrow-right"></i>
+                                                <span class="after">"Save"</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="note-box">
+                            <h5><i class="fas fa-info-circle"></i> 注意</h5>
+                            <p>學習內容（課文、單字）語言不變，只有操作介面改變</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 學習偏好設定 -->
+            <section class="content-section">
+                <h2><i class="fas fa-user-cog"></i> 學習偏好設定</h2>
+                
+                <!-- 自動播放設定 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> F. 自動播放設定</h3>
+                    <div class="setting-info">
+                        <p><strong>功能說明</strong>：控制點擊文字後是否自動播放發音</p>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>自動播放設定介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="detailed-example">
+                        <h4><i class="fas fa-play-circle"></i> 自動播放設定實例</h4>
+                        <div class="scenario">
+                            <strong>情境：</strong>家長希望孩子點擊文字後自動播放，不用再點播放按鈕
+                        </div>
+
+                        <div class="operation-steps">
+                            <h5>設定過程：</h5>
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">找到「學習偏好」區塊</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">看到「自動播放設定」選項</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">目前狀態：❌ 關閉（需要點擊播放按鈕）</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">點擊切換開關</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">狀態變為：✅ 開啟</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">
+                                        看到詳細說明：<br>
+                                        "開啟後，點擊任何文字將自動播放發音，無需額外點擊播放按鈕"
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">7</div>
+                                    <div class="step-content">點擊「儲存設定」</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-box">
+                            <h5><i class="fas fa-check-circle"></i> 測試效果</h5>
+                            <ol>
+                                <li>進入點讀功能</li>
+                                <li>點擊單字「apple」</li>
+                                <li>立即聽到發音，無需點播放按鈕</li>
+                                <li>學習效率提升，操作更簡便</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 學習提醒設定 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> G. 學習提醒設定</h3>
+                    
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>學習提醒設定介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="detailed-example">
+                        <h4><i class="fas fa-alarm-clock"></i> 學習提醒案例</h4>
+                        <div class="scenario">
+                            <strong>情境：</strong>學生想設定每天固定時間的學習提醒
+                        </div>
+
+                        <div class="operation-steps">
+                            <h5>配置步驟：</h5>
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">在「學習偏好」中找到「學習提醒」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        看到提醒設定選項：
+                                        <div class="reminder-options">
+                                            <div class="reminder-option current">🔕 關閉提醒 (目前選中)</div>
+                                            <div class="reminder-option">⏰ 每日提醒</div>
+                                            <div class="reminder-option">📅 自訂提醒</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">選擇「⏰ 每日提醒」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        出現時間設定選項：
+                                        <ul class="time-settings">
+                                            <li>提醒時間：[19:00] (可調整)</li>
+                                            <li>提醒內容：預設「該學英語囉！」</li>
+                                            <li>提醒方式：瀏覽器通知</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">設定提醒時間為晚上7點</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">自訂提醒訊息："小明，來學英語囉！加油！"</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">7</div>
+                                    <div class="step-content">點擊「測試通知」確認瀏覽器權限</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">8</div>
+                                    <div class="step-content">瀏覽器詢問是否允許通知 → 點擊「允許」</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">9</div>
+                                    <div class="step-content">看到測試通知彈出</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">10</div>
+                                    <div class="step-content">點擊「儲存提醒設定」</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-box">
+                            <h5><i class="fas fa-bell"></i> 預期效果</h5>
+                            <p>每天晚上7點會收到學習提醒通知，養成固定學習習慣</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 響應式與裝置設定 -->
+            <section class="content-section">
+                <h2><i class="fas fa-mobile-alt"></i> 響應式與裝置設定</h2>
+                
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> H. 裝置適配設定</h3>
+                    
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>裝置設定介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="detailed-example">
+                        <h4><i class="fas fa-tablet-alt"></i> 裝置設定案例</h4>
+                        <div class="scenario">
+                            <strong>情境：</strong>平板使用者想要調整觸控靈敏度和顯示大小
+                        </div>
+
+                        <div class="device-settings">
+                            <div class="setting-group">
+                                <h5>📏 文字大小：</h5>
+                                <div class="text-size-options">
+                                    <div class="size-option">🔤 小 (12px)</div>
+                                    <div class="size-option current">🔤 中 (16px) ⭐目前選中</div>
+                                    <div class="size-option">🔤 大 (20px)</div>
+                                    <div class="size-option">🔤 特大 (24px)</div>
+                                </div>
+                            </div>
+
+                            <div class="setting-group">
+                                <h5>👆 觸控設定：</h5>
+                                <div class="touch-settings">
+                                    <div class="touch-item">觸控靈敏度：[======|===] 70% (可拖動)</div>
+                                    <div class="touch-item">防誤觸：✅ 開啟</div>
+                                    <div class="touch-item">手勢支援：✅ 開啟</div>
+                                </div>
+                            </div>
+
+                            <div class="setting-group">
+                                <h5>🖥️ 顯示設定：</h5>
+                                <div class="display-settings">
+                                    <div class="display-item">橫屏模式：✅ 自動旋轉</div>
+                                    <div class="display-item">全螢幕學習：❌ 關閉</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="operation-summary">
+                            <h5>調整步驟：</h5>
+                            <ol>
+                                <li>調整文字大小為「🔤 大 (20px)」</li>
+                                <li>降低觸控靈敏度到50%（避免誤觸）</li>
+                                <li>開啟「全螢幕學習」模式</li>
+                                <li>點擊「應用設定」</li>
+                            </ol>
+                        </div>
+
+                        <div class="result-box">
+                            <h5><i class="fas fa-check-circle"></i> 設定結果</h5>
+                            <ul>
+                                <li>文字變大，更容易閱讀</li>
+                                <li>觸控需要稍微用力，減少誤操作</li>
+                                <li>學習時可隱藏狀態列，專注學習</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常見問題 -->
+            <section class="content-section">
+                <h2><i class="fas fa-question-circle"></i> 設定操作常見問題與解決</h2>
+                
+                <div class="problem-solution">
+                    <div class="problem-card">
+                        <h3><i class="fas fa-exclamation-triangle"></i> 問題1：設定沒有儲存</h3>
+                        
+                        <div class="wrong-way">
+                            <h4>❌ 錯誤做法：</h4>
+                            <ol>
+                                <li>調整音量到50%</li>
+                                <li>切換到深色主題</li>
+                                <li>直接關閉設定頁面 (沒有點儲存)</li>
+                                <li>重新開啟發現設定沒有變更</li>
+                            </ol>
+                        </div>
+
+                        <div class="correct-way">
+                            <h4>✅ 正確做法：</h4>
+                            <ol>
+                                <li>調整音量到50%</li>
+                                <li>切換到深色主題</li>
+                                <li>點擊「儲存設定」按鈕 ⭐重要</li>
+                                <li>等待出現「設定已儲存」提示</li>
+                                <li>再關閉設定頁面</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="problem-card">
+                        <h3><i class="fas fa-volume-mute"></i> 問題2：音量調整沒有效果</h3>
+                        
+                        <div class="diagnostic-steps">
+                            <h4><i class="fas fa-search"></i> 問題排查步驟：</h4>
+                            <div class="scenario">
+                                <strong>情境：</strong>用戶調整音量滑桿但聽不到聲音變化
+                            </div>
+
+                            <div class="checklist">
+                                <h5>檢查清單：</h5>
+                                <div class="check-item">
+                                    <h6>1. ✅ 檢查設備音量</h6>
+                                    <ul>
+                                        <li>電腦/平板的系統音量是否開啟</li>
+                                        <li>耳機/喇叭是否正常連接</li>
+                                    </ul>
+                                </div>
+
+                                <div class="check-item">
+                                    <h6>2. ✅ 檢查瀏覽器設定</h6>
+                                    <ul>
+                                        <li>Chrome: 點擊網址左側的🔊圖示</li>
+                                        <li>確認網站音頻未被靜音</li>
+                                        <li>確認網站音頻權限已允許</li>
+                                    </ul>
+                                </div>
+
+                                <div class="check-item">
+                                    <h6>3. ✅ 測試音效功能</h6>
+                                    <ul>
+                                        <li>在設定頁面點擊「測試音效」按鈕</li>
+                                        <li>應該聽到測試音效：「測試音效播放中」</li>
+                                        <li>如果沒有聲音，問題在瀏覽器/系統設定</li>
+                                    </ul>
+                                </div>
+
+                                <div class="check-item">
+                                    <h6>4. ✅ 重新載入頁面</h6>
+                                    <ul>
+                                        <li>有時需要重新載入讓設定生效</li>
+                                        <li>按F5重新整理或關閉重新開啟分頁</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="solution-result">
+                                <h5><i class="fas fa-lightbulb"></i> 解決結果</h5>
+                                <p>大部分音量問題都是系統音量或瀏覽器權限造成</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 進階設定技巧 -->
+            <section class="content-section">
+                <h2><i class="fas fa-star"></i> 進階設定技巧</h2>
+                
+                <div class="advanced-tips">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> I. 學習環境優化組合</h3>
+                    <p><strong>場景導向設定範例：</strong></p>
+
+                    <!-- 夜間學習模式 -->
+                    <div class="mode-card night-mode">
+                        <h4><i class="fas fa-moon"></i> 夜間學習模式</h4>
+                        <div class="mode-scenario">
+                            <strong>🌃 適用：</strong>晚上在房間安靜學習
+                        </div>
+
+                        <div class="mode-settings">
+                            <div class="setting-category">
+                                <h5>📱 視覺設定：</h5>
+                                <ul>
+                                    <li>主題：🌙 深色主題</li>
+                                    <li>文字大小：🔤 中 (16px)</li>
+                                    <li>亮度調整：較低 (如果有此功能)</li>
+                                </ul>
+                            </div>
+
+                            <div class="setting-category">
+                                <h5>🔊 音頻設定：</h5>
+                                <ul>
+                                    <li>主音量：20-30% (不吵到家人)</li>
+                                    <li>播放速度：0.8x (慢速，專注理解)</li>
+                                    <li>自動播放：✅ 開啟</li>
+                                </ul>
+                            </div>
+
+                            <div class="setting-category">
+                                <h5>⏰ 學習設定：</h5>
+                                <ul>
+                                    <li>學習提醒：關閉 (已在學習中)</li>
+                                    <li>休息提醒：30分鐘提醒 (保護眼睛)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="setup-steps">
+                            <h5>操作步驟：</h5>
+                            <ol>
+                                <li>主題 → 選擇深色</li>
+                                <li>音量 → 調至25%</li>
+                                <li>速度 → 選擇0.8x</li>
+                                <li>開啟自動播放</li>
+                                <li>設定30分鐘休息提醒</li>
+                                <li>儲存設定 → 開始夜間學習</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- 課堂教學模式 -->
+                    <div class="mode-card classroom-mode">
+                        <h4><i class="fas fa-chalkboard-teacher"></i> 課堂教學模式</h4>
+                        <div class="mode-scenario">
+                            <strong>🏫 適用：</strong>老師在教室使用投影設備
+                        </div>
+
+                        <div class="mode-settings">
+                            <div class="setting-category">
+                                <h5>📱 視覺設定：</h5>
+                                <ul>
+                                    <li>主題：🌞 明亮主題 (投影清楚)</li>
+                                    <li>文字大小：🔤 特大 (24px) (後排學生可見)</li>
+                                    <li>高對比度：開啟</li>
+                                </ul>
+                            </div>
+
+                            <div class="setting-category">
+                                <h5>🔊 音頻設定：</h5>
+                                <ul>
+                                    <li>主音量：80-90% (全班都能聽到)</li>
+                                    <li>播放速度：1.0x (正常速度)</li>
+                                    <li>自動播放：❌ 關閉 (老師控制節奏)</li>
+                                </ul>
+                            </div>
+
+                            <div class="setting-category">
+                                <h5>👆 互動設定：</h5>
+                                <ul>
+                                    <li>大按鈕模式：開啟 (方便點擊)</li>
+                                    <li>觸控輔助：開啟 (多人操作)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="setup-steps">
+                            <h5>實施步驟：</h5>
+                            <ol>
+                                <li>課前設定檢查：大文字 + 明亮主題</li>
+                                <li>音量測試：最後一排學生是否聽得清楚</li>
+                                <li>按鈕大小：確認投影時容易點擊</li>
+                                <li>關閉自動播放：讓老師控制教學節奏</li>
+                                <li>儲存為「課堂模式」設定組合</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 設定效果驗證 -->
+            <section class="content-section">
+                <h2><i class="fas fa-check-double"></i> 設定效果驗證</h2>
+                
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> J. 設定變更測試流程</h3>
+                    
+                    <div class="verification-checklist">
+                        <h4><i class="fas fa-flask"></i> 設定測試檢查清單</h4>
+                        <p><strong>修改設定後的測試步驟：</strong></p>
+
+                        <div class="test-items">
+                            <div class="test-item">
+                                <h5>1. ✅ 音量測試</h5>
+                                <ul>
+                                    <li>進入點讀功能</li>
+                                    <li>點擊任意單字</li>
+                                    <li>確認音量符合設定值</li>
+                                </ul>
+                            </div>
+
+                            <div class="test-item">
+                                <h5>2. ✅ 主題測試</h5>
+                                <ul>
+                                    <li>檢查首頁背景顏色</li>
+                                    <li>檢查文字對比度</li>
+                                    <li>確認所有頁面一致性</li>
+                                </ul>
+                            </div>
+
+                            <div class="test-item">
+                                <h5>3. ✅ 語言測試</h5>
+                                <ul>
+                                    <li>檢查按鈕文字語言</li>
+                                    <li>檢查選單項目語言</li>
+                                    <li>確認學習內容不受影響</li>
+                                </ul>
+                            </div>
+
+                            <div class="test-item">
+                                <h5>4. ✅ 功能測試</h5>
+                                <ul>
+                                    <li>測試點讀功能正常</li>
+                                    <li>測試單字卡功能正常</li>
+                                    <li>測試遊戲功能正常</li>
+                                </ul>
+                            </div>
+
+                            <div class="test-item">
+                                <h5>5. ✅ 響應式測試</h5>
+                                <ul>
+                                    <li>旋轉裝置測試橫豎屏</li>
+                                    <li>縮放瀏覽器視窗測試</li>
+                                    <li>觸控操作靈敏度測試</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="test-results">
+                            <div class="test-pass">
+                                <i class="fas fa-check-circle"></i>
+                                <span>全部測試通過 → 設定生效成功 ✅</span>
+                            </div>
+                            <div class="test-fail">
+                                <i class="fas fa-times-circle"></i>
+                                <span>發現問題 → 返回設定頁面調整 ❌</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教學檢查清單 -->
+            <section class="content-section">
+                <h2><i class="fas fa-clipboard-check"></i> 教學檢查清單</h2>
+                
+                <div class="checklist-container">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="settings-check1">
+                        <label for="settings-check1">能找到並進入設定頁面</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="settings-check2">
+                        <label for="settings-check2">能調整音量設定並測試效果</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="settings-check3">
+                        <label for="settings-check3">能切換播放速度並理解差異</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="settings-check4">
+                        <label for="settings-check4">能變更主題並確認視覺效果</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="settings-check5">
+                        <label for="settings-check5">能設定學習提醒功能</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="settings-check6">
+                        <label for="settings-check6">能根據使用情境優化設定組合</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="settings-check7">
+                        <label for="settings-check7">能測試驗證設定變更效果</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="settings-check8">
+                        <label for="settings-check8">能處理常見設定問題</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 個人化學習建議 -->
+            <section class="content-section">
+                <h2><i class="fas fa-user-graduate"></i> 個人化學習建議</h2>
+                
+                <div class="learning-stages">
+                    <h3>不同學習階段的設定建議</h3>
+                    
+                    <div class="stage-grid">
+                        <div class="stage-card beginner">
+                            <div class="stage-icon">🔰</div>
+                            <h4>初學者 (第一個月)</h4>
+                            <ul>
+                                <li>播放速度：0.8x 慢速</li>
+                                <li>自動播放：開啟</li>
+                                <li>學習提醒：每日固定時間</li>
+                                <li>主題：明亮或海洋主題</li>
+                            </ul>
+                        </div>
+
+                        <div class="stage-card intermediate">
+                            <div class="stage-icon">📈</div>
+                            <h4>進步中 (第二到六個月)</h4>
+                            <ul>
+                                <li>播放速度：1.0x 正常速度</li>
+                                <li>自動播放：可選擇關閉訓練點擊</li>
+                                <li>學習提醒：維持或調整頻率</li>
+                                <li>主題：個人喜好</li>
+                            </ul>
+                        </div>
+
+                        <div class="stage-card advanced">
+                            <div class="stage-icon">🏆</div>
+                            <h4>熟練者 (六個月以上)</h4>
+                            <ul>
+                                <li>播放速度：1.2x 或更快</li>
+                                <li>自動播放：關閉，訓練主動學習</li>
+                                <li>學習提醒：彈性安排</li>
+                                <li>主題：專注學習的深色主題</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 下一步學習 -->
+            <section class="content-section">
+                <h2><i class="fas fa-arrow-right"></i> 下一步學習</h2>
+                
+                <div class="next-steps">
+                    <div class="next-step-card">
+                        <div class="next-icon"><i class="fas fa-book-reader"></i></div>
+                        <h3>開始點讀學習</h3>
+                        <p>完成設定後，學習使用點讀功能進行互動式閱讀</p>
+                        <a href="reading-guide.html" class="btn-next">開始學習</a>
+                    </div>
+                    
+                    <div class="next-step-card">
+                        <div class="next-icon"><i class="fas fa-language"></i></div>
+                        <h3>嘗試單字學習</h3>
+                        <p>使用單字卡功能，配合個人化設定增強學習效果</p>
+                        <a href="vocabulary-guide.html" class="btn-next">開始學習</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 頁面底部導航 -->
+            <nav class="page-navigation">
+                <a href="homepage-guide.html" class="nav-prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>上一頁：首頁功能介紹</span>
+                </a>
+                <a href="reading-guide.html" class="nav-next">
+                    <span>下一頁：點讀功能操作</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </nav>
+        </main>
+
+        <!-- 頁腳 -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 ESL學習平台教學網站 - 專為ESL學習者設計的完整操作指南</p>
+                <div class="footer-links">
+                    <a href="../index.html">返回首頁</a>
+                    <a href="#top">回到頂部</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

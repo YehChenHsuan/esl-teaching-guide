@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁功能介紹 - ESL學習平台教學網站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 頂部導航 -->
+        <nav class="top-nav">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-home"></i>
+                教學網站首頁
+            </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- 主要內容 -->
+        <main class="main-content">
+            <!-- 頁面標題 -->
+            <header class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">首頁</a>
+                    <span>/</span>
+                    <a href="../index.html#frontend">前台操作</a>
+                    <span>/</span>
+                    <span>首頁功能介紹</span>
+                </div>
+                <h1><i class="fas fa-home"></i> 首頁功能介紹教學</h1>
+                <div class="page-meta">
+                    <span class="tag"><i class="fas fa-bullseye"></i> 學習目標：熟悉平台主頁面各項功能，學會基本導航操作</span>
+                    <span class="tag"><i class="fas fa-users"></i> 適用對象：學生、家長、老師</span>
+                </div>
+            </header>
+
+            <!-- 學習內容 -->
+            <section class="content-section">
+                <h2><i class="fas fa-home"></i> 首頁主要區域介紹</h2>
+                
+                <!-- 頂部導航區域 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> A. 頂部導航區域</h3>
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>首頁頂部導航區域截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                    
+                    <div class="step-list">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>左上角：平台Logo</h4>
+                                <ul>
+                                    <li>顯示ESL學習平台標誌</li>
+                                    <li>點擊可返回首頁</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>右上角：用戶資訊</h4>
+                                <ul>
+                                    <li>顯示當前登入用戶名稱</li>
+                                    <li>點擊可看到帳號選單</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>導航選單</h4>
+                                <ul>
+                                    <li>主要功能分類選單</li>
+                                    <li>可快速切換不同學習模組</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 主要內容區域 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-window-maximize"></i> B. 主要內容區域</h3>
+                    
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-star"></i> 1. 歡迎訊息區</h4>
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>歡迎訊息區域截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+                        <ul>
+                            <li>顯示個人化歡迎語</li>
+                            <li>可能包含今日學習提醒</li>
+                            <li>學習進度提示</li>
+                        </ul>
+                    </div>
+
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-star"></i><i class="fas fa-star"></i> 2. 教材預覽區域</h4>
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>教材預覽區域截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+                        
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <h5><i class="fas fa-book-open"></i> 教材縮圖展示</h5>
+                                <ul>
+                                    <li>顯示各課本/教材的預覽圖片</li>
+                                    <li>圖片會顯示教材名稱和級別</li>
+                                </ul>
+                            </div>
+                            <div class="feature-item">
+                                <h5><i class="fas fa-play-circle"></i> 快速進入學習</h5>
+                                <ul>
+                                    <li>點擊任一教材圖片</li>
+                                    <li>直接進入該教材的閱讀模式</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-star"></i><i class="fas fa-star"></i> 3. 功能選單區</h4>
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>主要功能選單區域截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+                        
+                        <div class="function-grid">
+                            <div class="function-card">
+                                <div class="function-icon"><i class="fas fa-book-open"></i></div>
+                                <h5>📖 閱讀學習</h5>
+                                <ul>
+                                    <li>點擊進入教材選擇</li>
+                                    <li>可進行點讀、跟讀等學習活動</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="function-card">
+                                <div class="function-icon"><i class="fas fa-language"></i></div>
+                                <h5>📚 單字學習</h5>
+                                <ul>
+                                    <li>點擊進入單字卡功能</li>
+                                    <li>包含單字書選擇和複習功能</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="function-card">
+                                <div class="function-icon"><i class="fas fa-gamepad"></i></div>
+                                <h5>🎮 互動遊戲</h5>
+                                <ul>
+                                    <li>點擊進入遊戲選單</li>
+                                    <li>包含各種英語學習遊戲</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="function-card">
+                                <div class="function-icon"><i class="fas fa-chart-line"></i></div>
+                                <h5>📊 學習進度</h5>
+                                <ul>
+                                    <li>查看個人學習記錄</li>
+                                    <li>分析學習成效</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="function-card">
+                                <div class="function-icon"><i class="fas fa-cog"></i></div>
+                                <h5>⚙️ 設定</h5>
+                                <ul>
+                                    <li>個人設定調整</li>
+                                    <li>系統偏好設定</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 基本導航操作 -->
+            <section class="content-section">
+                <h2><i class="fas fa-compass"></i> 基本導航操作</h2>
+                
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> 快速導航方法</h3>
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>基本導航操作示範截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                    
+                    <div class="navigation-methods">
+                        <div class="nav-method">
+                            <div class="method-icon"><i class="fas fa-mouse-pointer"></i></div>
+                            <div class="method-content">
+                                <h4>1. 從教材圖片進入</h4>
+                                <p>點擊教材預覽圖 → 直接開始閱讀該教材</p>
+                            </div>
+                        </div>
+                        
+                        <div class="nav-method">
+                            <div class="method-icon"><i class="fas fa-list"></i></div>
+                            <div class="method-content">
+                                <h4>2. 從功能選單進入</h4>
+                                <p>點擊功能按鈕 → 進入該功能的詳細頁面</p>
+                            </div>
+                        </div>
+                        
+                        <div class="nav-method">
+                            <div class="method-icon"><i class="fas fa-bars"></i></div>
+                            <div class="method-content">
+                                <h4>3. 使用頂部導航</h4>
+                                <p>點擊導航選單 → 快速切換功能模組</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <h3><i class="fas fa-home"></i> 返回首頁方法</h3>
+                    <div class="return-methods">
+                        <ul>
+                            <li><i class="fas fa-mouse-pointer"></i> 點擊左上角Logo</li>
+                            <li><i class="fas fa-arrow-left"></i> 使用瀏覽器返回鍵</li>
+                            <li><i class="fas fa-home"></i> 點擊「首頁」按鈕（如果有的話）</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 使用小技巧 -->
+            <section class="content-section">
+                <h2><i class="fas fa-lightbulb"></i> 使用小技巧</h2>
+                
+                <div class="tips-grid">
+                    <div class="tip-card user-student">
+                        <div class="tip-icon"><i class="fas fa-user-graduate"></i></div>
+                        <h3>👶 學生使用者</h3>
+                        <ul>
+                            <li>專注於教材預覽圖片，選擇想學的教材</li>
+                            <li>從遊戲功能開始，增加學習趣味</li>
+                            <li>定期查看學習進度了解自己的表現</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card user-parent">
+                        <div class="tip-icon"><i class="fas fa-users"></i></div>
+                        <h3>👨‍👩‍👧‍👦 家長使用者</h3>
+                        <ul>
+                            <li>協助孩子選擇適合的教材級別</li>
+                            <li>定期檢查學習進度功能</li>
+                            <li>使用設定功能調整適合孩子的學習環境</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card user-teacher">
+                        <div class="tip-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3>👨‍🏫 老師使用者</h3>
+                        <ul>
+                            <li>熟悉所有教材內容分佈</li>
+                            <li>善用學習進度功能追蹤學生表現</li>
+                            <li>利用各種學習功能設計課程活動</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常見問題 -->
+            <section class="content-section">
+                <h2><i class="fas fa-question-circle"></i> 常見問題</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question"></i>
+                            <span>Q1: 教材圖片沒有顯示怎麼辦？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <ul>
+                                <li><i class="fas fa-wifi"></i> 檢查網路連線</li>
+                                <li><i class="fas fa-sync-alt"></i> 重新整理頁面</li>
+                                <li><i class="fas fa-trash"></i> 清除瀏覽器快取</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question"></i>
+                            <span>Q2: 找不到特定功能怎麼辦？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <ul>
+                                <li><i class="fas fa-key"></i> 檢查是否有權限使用該功能</li>
+                                <li><i class="fas fa-sign-in-alt"></i> 確認是否已正確登入</li>
+                                <li><i class="fas fa-phone"></i> 聯繫管理員確認帳號設定</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question"></i>
+                            <span>Q3: 頁面載入很慢怎麼辦？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <ul>
+                                <li><i class="fas fa-tachometer-alt"></i> 檢查網路速度</li>
+                                <li><i class="fas fa-window-close"></i> 關閉其他不必要的瀏覽器分頁</li>
+                                <li><i class="fas fa-broom"></i> 清除瀏覽器快取</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教學檢查清單 -->
+            <section class="content-section">
+                <h2><i class="fas fa-clipboard-check"></i> 教學檢查清單</h2>
+                
+                <div class="checklist-container">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check1">
+                        <label for="check1">能識別頂部導航區域各元素</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check2">
+                        <label for="check2">能看到並理解教材預覽區域</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check3">
+                        <label for="check3">能找到主要功能選單按鈕</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check4">
+                        <label for="check4">能點擊教材圖片進入學習</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check5">
+                        <label for="check5">能使用基本導航操作</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check6">
+                        <label for="check6">知道如何返回首頁</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 下一步學習 -->
+            <section class="content-section">
+                <h2><i class="fas fa-arrow-right"></i> 下一步學習</h2>
+                
+                <div class="next-steps">
+                    <div class="next-step-card">
+                        <div class="next-icon"><i class="fas fa-cog"></i></div>
+                        <h3>學習基本設定</h3>
+                        <p>了解如何調整系統設定，個人化學習環境</p>
+                        <a href="settings-guide.html" class="btn-next">開始學習</a>
+                    </div>
+                    
+                    <div class="next-step-card">
+                        <div class="next-icon"><i class="fas fa-book-reader"></i></div>
+                        <h3>開始閱讀學習</h3>
+                        <p>學習使用點讀功能和互動閱讀工具</p>
+                        <a href="reading-guide.html" class="btn-next">開始學習</a>
+                    </div>
+                    
+                    <div class="next-step-card">
+                        <div class="next-icon"><i class="fas fa-language"></i></div>
+                        <h3>嘗試單字學習</h3>
+                        <p>使用單字卡功能增強詞彙能力</p>
+                        <a href="vocabulary-guide.html" class="btn-next">開始學習</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 頁面底部導航 -->
+            <nav class="page-navigation">
+                <a href="login-guide.html" class="nav-prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>上一頁：登入操作指南</span>
+                </a>
+                <a href="settings-guide.html" class="nav-next">
+                    <span>下一頁：設定頁面使用</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </nav>
+        </main>
+
+        <!-- 頁腳 -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 ESL學習平台教學網站 - 專為ESL學習者設計的完整操作指南</p>
+                <div class="footer-links">
+                    <a href="../index.html">返回首頁</a>
+                    <a href="#top">回到頂部</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

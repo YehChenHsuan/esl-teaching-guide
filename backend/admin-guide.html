@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台登入與權限驗證 - ESL學習平台教學網站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 頂部導航 -->
+        <nav class="top-nav">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-home"></i>
+                教學網站首頁
+            </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- 主要內容 -->
+        <main class="main-content">
+            <!-- 頁面標題 -->
+            <header class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">首頁</a>
+                    <span>/</span>
+                    <a href="../index.html#backend">後台操作</a>
+                    <span>/</span>
+                    <span>後台登入與權限驗證</span>
+                </div>
+                <h1><i class="fas fa-shield-alt"></i> 後台登入與權限驗證教學</h1>
+                <div class="page-meta">
+                    <span class="tag"><i class="fas fa-bullseye"></i> 學習目標：學會如何安全登入管理後台並通過權限驗證</span>
+                    <span class="tag"><i class="fas fa-users"></i> 適用對象：行政人員、系統管理員</span>
+                </div>
+            </header>
+
+            <!-- 後台登入流程 -->
+            <section class="content-section">
+                <h2><i class="fas fa-key"></i> 後台登入流程</h2>
+
+                <!-- 取得管理員帳號 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-user-shield"></i> A. 取得管理員帳號</h3>
+                    
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-icon"><i class="fas fa-file-alt"></i></div>
+                            <div class="step-content">
+                                <h4>1. 權限申請</h4>
+                                <ul>
+                                    <li>向系統管理員申請後台管理權限</li>
+                                    <li>確認您的職務需要使用後台功能</li>
+                                    <li>等待權限審核通過</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="process-step">
+                            <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="step-content">
+                                <h4>2. 帳號確認</h4>
+                                <ul>
+                                    <li>確認您的帳號已被設定為管理員權限</li>
+                                    <li>記住您的管理員帳號和密碼</li>
+                                    <li>確保帳號資訊安全保存</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>管理員帳號申請流程截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+
+                <!-- 登入系統 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> B. 登入系統</h3>
+                    
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>後台登入頁面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="login-workflow">
+                        <div class="workflow-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>開啟登入頁面</h4>
+                                <ul>
+                                    <li>在瀏覽器輸入平台網址</li>
+                                    <li>等待系統載入完成</li>
+                                    <li>進入一般登入頁面</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step highlighted">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4><i class="fas fa-star"></i> 輸入帳號資訊</h4>
+                                <ul>
+                                    <li>在「用戶名/Email」欄位輸入管理員帳號</li>
+                                    <li>在「密碼」欄位輸入對應密碼</li>
+                                    <li>確認輸入資訊正確無誤</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step highlighted">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4><i class="fas fa-star"></i> 提交登入</h4>
+                                <ul>
+                                    <li>點擊「登入」按鈕</li>
+                                    <li>等待系統驗證帳號權限</li>
+                                    <li>系統會自動檢查管理員權限</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 權限驗證過程 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> C. 權限驗證過程</h3>
+                    
+                    <div class="verification-process">
+                        <div class="verification-step">
+                            <div class="step-icon"><i class="fas fa-shield"></i></div>
+                            <div class="step-content">
+                                <h4>1. 自動權限檢查</h4>
+                                <ul>
+                                    <li>系統登入後會自動檢查您的權限等級</li>
+                                    <li>如果是一般用戶，會導向前台主頁</li>
+                                    <li>如果是管理員，會看到後台選項</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="verification-step">
+                            <div class="step-icon"><i class="fas fa-door-open"></i></div>
+                            <div class="step-content">
+                                <h4>2. 進入後台方式</h4>
+                                <div class="entry-methods">
+                                    <div class="method-card">
+                                        <h5>方法一：直接導向</h5>
+                                        <p>如果系統設定自動導向</p>
+                                    </div>
+                                    <div class="method-card">
+                                        <h5>方法二：手動進入</h5>
+                                        <ul>
+                                            <li>登入成功後在前台頁面</li>
+                                            <li>尋找「管理後台」或「Admin」連結</li>
+                                            <li>點擊進入後台管理介面</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>權限驗證過程示範截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 後台權限驗證機制 -->
+            <section class="content-section">
+                <h2><i class="fas fa-building"></i> 後台權限驗證機制</h2>
+
+                <!-- 權限驗證步驟 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 權限驗證步驟</h3>
+                    
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>權限驗證機制流程圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="verification-layers">
+                        <div class="layer-card">
+                            <div class="layer-icon">1</div>
+                            <div class="layer-content">
+                                <h4>第一層：登入驗證</h4>
+                                <ul>
+                                    <li>系統確認帳號密碼正確</li>
+                                    <li>檢查帳號狀態是否正常</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="layer-card">
+                            <div class="layer-icon">2</div>
+                            <div class="layer-content">
+                                <h4>第二層：權限等級檢查</h4>
+                                <ul>
+                                    <li>系統檢查該帳號是否具有管理員權限</li>
+                                    <li>權限不足會顯示錯誤訊息：「您沒有權限訪問管理後台」</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="layer-card">
+                            <div class="layer-icon">3</div>
+                            <div class="layer-content">
+                                <h4>第三層：功能權限控制</h4>
+                                <ul>
+                                    <li>即使進入後台，不同管理員可能有不同功能權限</li>
+                                    <li>某些敏感功能可能需要更高權限</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 權限驗證失敗處理 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-exclamation-triangle"></i> 權限驗證失敗處理</h3>
+                    
+                    <div class="failure-scenarios">
+                        <div class="scenario-card error">
+                            <div class="scenario-header">
+                                <i class="fas fa-ban"></i>
+                                <h4>情況一：沒有管理員權限</h4>
+                            </div>
+                            <div class="scenario-content">
+                                <ul>
+                                    <li><span class="error-indicator">🔴</span> 顯示紅色錯誤訊息</li>
+                                    <li><span class="redirect-indicator">↩️</span> 自動導回前台主頁</li>
+                                    <li><span class="solution-indicator">💡</span> 建議聯繫系統管理員申請權限</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="scenario-card warning">
+                            <div class="scenario-header">
+                                <i class="fas fa-user-slash"></i>
+                                <h4>情況二：帳號被停用</h4>
+                            </div>
+                            <div class="scenario-content">
+                                <ul>
+                                    <li><span class="error-indicator">❌</span> 無法正常登入</li>
+                                    <li><span class="warning-indicator">⚠️</span> 顯示帳號狀態異常訊息</li>
+                                    <li><span class="solution-indicator">📞</span> 需要聯繫上級主管處理</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>權限驗證失敗錯誤訊息截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 成功進入後台後的確認 -->
+            <section class="content-section">
+                <h2><i class="fas fa-door-open"></i> 成功進入後台後的確認</h2>
+
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> 後台主控台特徵</h3>
+                    
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>後台主控台介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="console-features">
+                        <div class="feature-section">
+                            <h4><i class="fas fa-window-maximize"></i> 1. 頁面標題變更</h4>
+                            <ul>
+                                <li>頁面標題顯示「管理後台」</li>
+                                <li>網址可能包含 /admin 路徑</li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-section highlighted">
+                            <h4><i class="fas fa-star"></i> 2. 頂部導航列</h4>
+                            <div class="navbar-breakdown">
+                                <div class="navbar-section">
+                                    <div class="section-label">左側</div>
+                                    <div class="section-content">顯示「管理後台」標題</div>
+                                </div>
+                                <div class="navbar-section">
+                                    <div class="section-label">中間</div>
+                                    <div class="section-content">可能顯示當前登入的管理員名稱</div>
+                                </div>
+                                <div class="navbar-section">
+                                    <div class="section-label">右側</div>
+                                    <div class="section-content">
+                                        包含以下按鈕：
+                                        <div class="button-list">
+                                            <div class="button-item">
+                                                <i class="fas fa-home"></i>
+                                                <span><strong>首頁按鈕</strong>：切換回前台</span>
+                                            </div>
+                                            <div class="button-item">
+                                                <i class="fas fa-user"></i>
+                                                <span><strong>用戶資訊</strong>：顯示「使用者: [您的用戶名]」</span>
+                                            </div>
+                                            <div class="button-item">
+                                                <i class="fas fa-sign-out-alt"></i>
+                                                <span><strong>登出按鈕</strong>：安全登出系統</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-section">
+                            <h4><i class="fas fa-th-large"></i> 3. 功能選單區域</h4>
+                            <ul>
+                                <li>顯示各種管理功能卡片</li>
+                                <li>每個卡片包含功能圖示、標題和說明</li>
+                                <li>點擊卡片進入對應的管理功能</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 安全注意事項 -->
+            <section class="content-section">
+                <h2><i class="fas fa-shield-alt"></i> 安全注意事項</h2>
+
+                <!-- 登入安全規範 -->
+                <div class="security-card">
+                    <h3><i class="fas fa-lock"></i> 登入安全規範</h3>
+                    
+                    <div class="security-sections">
+                        <div class="security-section">
+                            <div class="security-icon"><i class="fas fa-key"></i></div>
+                            <div class="security-content">
+                                <h4>1. 密碼保護</h4>
+                                <ul>
+                                    <li>不要與他人分享管理員帳號密碼</li>
+                                    <li>定期更換密碼</li>
+                                    <li>使用複雜度高的密碼</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="security-section">
+                            <div class="security-icon"><i class="fas fa-wifi"></i></div>
+                            <div class="security-content">
+                                <h4>2. 環境安全</h4>
+                                <ul>
+                                    <li>在安全的網路環境下登入</li>
+                                    <li>避免在公共電腦上登入後台</li>
+                                    <li>確保周圍沒有他人窺視</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="security-section">
+                            <div class="security-icon"><i class="fas fa-clipboard-list"></i></div>
+                            <div class="security-content">
+                                <h4>3. 操作記錄</h4>
+                                <ul>
+                                    <li>知道所有操作都會被記錄</li>
+                                    <li>避免不必要的操作</li>
+                                    <li>負責任地使用管理權限</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 登出安全 -->
+                <div class="security-card">
+                    <h3><i class="fas fa-sign-out-alt"></i> 登出安全</h3>
+                    
+                    <div class="logout-security">
+                        <div class="logout-section">
+                            <h4><i class="fas fa-clock"></i> 1. 及時登出</h4>
+                            <ul>
+                                <li>使用完畢立即登出</li>
+                                <li>不要長時間保持登入狀態</li>
+                                <li>離開電腦前確認已登出</li>
+                            </ul>
+                        </div>
+
+                        <div class="logout-section">
+                            <h4><i class="fas fa-chrome"></i> 2. 瀏覽器安全</h4>
+                            <ul>
+                                <li>清除瀏覽器記錄（如有敏感操作）</li>
+                                <li>關閉所有相關分頁</li>
+                                <li>確認瀏覽器沒有儲存敏感資訊</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>安全登出流程截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常見問題解決 -->
+            <section class="content-section">
+                <h2><i class="fas fa-question-circle"></i> 常見問題解決</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-eye-slash"></i>
+                            <span>Q1: 登入後沒有看到管理後台選項？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>檢查步驟：</h5>
+                            <ol>
+                                <li><i class="fas fa-user-check"></i> 確認您的帳號確實具有管理員權限</li>
+                                <li><i class="fas fa-phone"></i> 聯繫系統管理員確認權限設定</li>
+                                <li><i class="fas fa-sign-out-alt"></i> 嘗試登出重新登入</li>
+                                <li><i class="fas fa-link"></i> 檢查網址是否包含正確的管理路徑</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-ban"></i>
+                            <span>Q2: 顯示「權限不足」錯誤？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>解決方法：</h5>
+                            <ol>
+                                <li><i class="fas fa-user-shield"></i> 確認使用正確的管理員帳號</li>
+                                <li><i class="fas fa-heartbeat"></i> 檢查帳號狀態是否正常</li>
+                                <li><i class="fas fa-tools"></i> 聯繫系統管理員檢查權限設定</li>
+                                <li><i class="fas fa-spell-check"></i> 確認沒有輸入錯誤的帳號資訊</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-bug"></i>
+                            <span>Q3: 登入成功但頁面顯示異常？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>處理步驟：</h5>
+                            <ol>
+                                <li><i class="fas fa-sync-alt"></i> 重新整理頁面</li>
+                                <li><i class="fas fa-trash"></i> 清除瀏覽器快取</li>
+                                <li><i class="fas fa-user-secret"></i> 嘗試使用無痕模式</li>
+                                <li><i class="fas fa-wifi"></i> 檢查網路連線狀態</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question"></i>
+                            <span>Q4: 忘記管理員帳號密碼？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>處理流程：</h5>
+                            <ol>
+                                <li><i class="fas fa-times-circle"></i> 不要嘗試猜測密碼（可能導致帳號鎖定）</li>
+                                <li><i class="fas fa-phone-alt"></i> 立即聯繫系統管理員</li>
+                                <li><i class="fas fa-clipboard-check"></i> 按照公司流程進行密碼重置</li>
+                                <li><i class="fas fa-shield-alt"></i> 重置後立即修改為安全密碼</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 操作記錄建議 -->
+            <section class="content-section">
+                <h2><i class="fas fa-clipboard-list"></i> 操作記錄建議</h2>
+                
+                <div class="logging-card">
+                    <h3><i class="fas fa-pencil-alt"></i> 建議在每次登入後台時記錄：</h3>
+                    
+                    <div class="logging-checklist">
+                        <div class="log-item">
+                            <i class="fas fa-clock"></i>
+                            <span><strong>登入時間</strong> - 記錄開始使用系統的時間</span>
+                        </div>
+                        <div class="log-item">
+                            <i class="fas fa-tasks"></i>
+                            <span><strong>執行的操作項目</strong> - 詳細記錄進行了哪些管理操作</span>
+                        </div>
+                        <div class="log-item">
+                            <i class="fas fa-edit"></i>
+                            <span><strong>修改的內容</strong> - 記錄具體修改了什麼資料</span>
+                        </div>
+                        <div class="log-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span><strong>發現的問題</strong> - 記錄操作過程中遇到的任何問題</span>
+                        </div>
+                        <div class="log-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>操作完成時間</strong> - 記錄結束使用系統的時間</span>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>操作記錄表格範例截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教學檢查清單 -->
+            <section class="content-section">
+                <h2><i class="fas fa-clipboard-check"></i> 教學檢查清單</h2>
+                
+                <div class="checklist-container">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="admin-check1">
+                        <label for="admin-check1">確認已取得管理員帳號和權限</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="admin-check2">
+                        <label for="admin-check2">能成功登入系統</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="admin-check3">
+                        <label for="admin-check3">通過權限驗證進入後台</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="admin-check4">
+                        <label for="admin-check4">能識別後台主控台介面元素</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="admin-check5">
+                        <label for="admin-check5">了解安全操作規範</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="admin-check6">
+                        <label for="admin-check6">知道如何安全登出</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="admin-check7">
+                        <label for="admin-check7">能處理常見登入問題</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 下一步學習 -->
+            <section class="content-section">
+                <h2><i class="fas fa-arrow-right"></i> 下一步學習</h2>
+                
+                <div class="next-steps">
+                    <div class="next-step-card">
+                        <div class="next-icon"><i class="fas fa-users-cog"></i></div>
+                        <h3>用戶管理</h3>
+                        <p>完成後台登入後，學習如何管理系統用戶</p>
+                        <a href="user-management.html" class="btn-next">開始學習</a>
+                    </div>
+                    
+                    <div class="next-step-card">
+                        <div class="next-icon"><i class="fas fa-language"></i></div>
+                        <h3>單字卡管理</h3>
+                        <p>學習如何新增、編輯和管理教學單字卡</p>
+                        <a href="vocabulary-management.html" class="btn-next">開始學習</a>
+                    </div>
+                    
+                    <div class="next-step-card">
+                        <div class="next-icon"><i class="fas fa-book"></i></div>
+                        <h3>教材管理</h3>
+                        <p>了解如何管理和配置教學材料</p>
+                        <a href="content-management.html" class="btn-next">開始學習</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 頁面底部導航 -->
+            <nav class="page-navigation">
+                <a href="../frontend/games-guide.html" class="nav-prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>上一頁：互動遊戲玩法</span>
+                </a>
+                <a href="vocabulary-management.html" class="nav-next">
+                    <span>下一頁：單字卡管理</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </nav>
+        </main>
+
+        <!-- 頁腳 -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 ESL學習平台教學網站 - 專為ESL學習者設計的完整操作指南</p>
+                <div class="footer-links">
+                    <a href="../index.html">返回首頁</a>
+                    <a href="#top">回到頂部</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

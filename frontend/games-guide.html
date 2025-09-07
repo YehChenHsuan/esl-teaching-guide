@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互動遊戲玩法 - ESL學習平台教學網站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 頂部導航 -->
+        <nav class="top-nav">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-home"></i>
+                教學網站首頁
+            </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- 主要內容 -->
+        <main class="main-content">
+            <!-- 頁面標題 -->
+            <header class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">首頁</a>
+                    <span>/</span>
+                    <a href="../index.html#frontend">前台操作</a>
+                    <span>/</span>
+                    <span>互動遊戲玩法</span>
+                </div>
+                <h1><i class="fas fa-gamepad"></i> 各類遊戲玩法教學</h1>
+                <div class="page-meta">
+                    <span class="tag"><i class="fas fa-bullseye"></i> 學習目標：掌握平台內各種英語學習遊戲的操作方法，透過遊戲化學習提升英語能力</span>
+                    <span class="tag"><i class="fas fa-users"></i> 適用對象：學生、家長、老師</span>
+                </div>
+            </header>
+
+            <!-- 遊戲功能總覽 -->
+            <section class="content-section">
+                <h2><i class="fas fa-gamepad"></i> 遊戲功能總覽</h2>
+                <div class="topic-card">
+                    <p>平台提供多種互動學習遊戲，讓學習變得有趣且有效：</p>
+                    <div class="game-types">
+                        <div class="game-type-card">
+                            <div class="game-icon"><i class="fas fa-headphones"></i></div>
+                            <h3>聽力遊戲</h3>
+                            <p>訓練英語聽力理解</p>
+                        </div>
+                        <div class="game-type-card">
+                            <div class="game-icon"><i class="fas fa-spell-check"></i></div>
+                            <h3>拼字遊戲</h3>
+                            <p>強化單字拼寫能力</p>
+                        </div>
+                        <div class="game-type-card">
+                            <div class="game-icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <h3>配對遊戲</h3>
+                            <p>加深單字記憶</p>
+                        </div>
+                        <div class="game-type-card">
+                            <div class="game-icon"><i class="fas fa-list-ul"></i></div>
+                            <h3>句子重組</h3>
+                            <p>提升語法理解</p>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>遊戲功能總覽截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 進入遊戲的方法 -->
+            <section class="content-section">
+                <h2><i class="fas fa-play-circle"></i> 進入遊戲的方法</h2>
+
+                <!-- 從首頁進入 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> A. 從首頁進入</h3>
+                    
+                    <div class="entry-methods">
+                        <div class="method-step">
+                            <h4><i class="fas fa-mouse-pointer"></i> 1. 點擊遊戲功能</h4>
+                            <ul>
+                                <li>在首頁找到「🎮 互動遊戲」按鈕</li>
+                                <li>點擊進入遊戲選單頁面</li>
+                            </ul>
+                        </div>
+
+                        <div class="method-step">
+                            <h4><i class="fas fa-list"></i> 2. 選擇遊戲類型</h4>
+                            <ul>
+                                <li>瀏覽可用的遊戲選項</li>
+                                <li>根據學習需求選擇適合的遊戲</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>從首頁進入遊戲的步驟截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+
+                <!-- 從教材進入 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-book-open"></i> B. 從教材進入</h3>
+                    
+                    <div class="method-step">
+                        <h4><i class="fas fa-book"></i> 在閱讀頁面</h4>
+                        <ul>
+                            <li>完成閱讀後可能出現遊戲建議</li>
+                            <li>點擊相關遊戲連結直接進入</li>
+                        </ul>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>從教材進入遊戲的入口截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 各類遊戲詳細操作 -->
+            <section class="content-section">
+                <h2><i class="fas fa-dice"></i> 各類遊戲詳細操作</h2>
+
+                <!-- 聽音選圖遊戲 -->
+                <div class="game-detail-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> 1. 聽音選圖遊戲</h3>
+                    
+                    <div class="game-description">
+                        <h4><i class="fas fa-info-circle"></i> 遊戲說明</h4>
+                        <ul>
+                            <li>聽到英語發音，從多個圖片中選擇正確答案</li>
+                            <li>訓練聽力理解和單字認知</li>
+                        </ul>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>聽音選圖遊戲介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="game-steps">
+                        <h4><i class="fas fa-star"></i> 操作步驟</h4>
+                        <div class="step-sequence">
+                            <div class="game-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5>遊戲開始</h5>
+                                    <ul>
+                                        <li>點擊「開始遊戲」按鈕</li>
+                                        <li>系統顯示多張圖片選項</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5><i class="fas fa-volume-up"></i> 聆聽音頻 ⭐</h5>
+                                    <ul>
+                                        <li>點擊播放按鈕（🔊）或自動播放</li>
+                                        <li>仔細聽取英語單字或句子</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5>選擇答案</h5>
+                                    <ul>
+                                        <li>觀察所有圖片選項</li>
+                                        <li>點擊認為正確的圖片</li>
+                                        <li>系統立即顯示對錯結果</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h5>查看結果</h5>
+                                    <div class="result-types">
+                                        <div class="result-item correct">
+                                            <i class="fas fa-check"></i>
+                                            <span><strong>正確</strong>：顯示綠色標示和鼓勵訊息</span>
+                                        </div>
+                                        <div class="result-item incorrect">
+                                            <i class="fas fa-times"></i>
+                                            <span><strong>錯誤</strong>：顯示紅色標示和正確答案</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h5>繼續下一題</h5>
+                                    <ul>
+                                        <li>點擊「下一題」按鈕</li>
+                                        <li>重複步驟2-4直到遊戲結束</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 單字拼寫遊戲 -->
+                <div class="game-detail-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> 2. 單字拼寫遊戲</h3>
+                    
+                    <div class="game-description">
+                        <h4><i class="fas fa-info-circle"></i> 遊戲說明</h4>
+                        <ul>
+                            <li>聽到發音或看到圖片，輸入正確的英文拼寫</li>
+                            <li>強化拼字能力和單字記憶</li>
+                        </ul>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>單字拼寫遊戲介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="game-steps">
+                        <h4><i class="fas fa-star"></i> 操作步驟</h4>
+                        <div class="step-sequence">
+                            <div class="game-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5>題目呈現</h5>
+                                    <ul>
+                                        <li>系統播放單字發音</li>
+                                        <li>或顯示相關圖片/中文翻譯</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5><i class="fas fa-keyboard"></i> 輸入答案 ⭐</h5>
+                                    <ul>
+                                        <li>在文字輸入框中打字</li>
+                                        <li>輸入完整的英文單字</li>
+                                        <li>注意大小寫（通常不區分）</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5>提交答案</h5>
+                                    <ul>
+                                        <li>點擊「確認」或按Enter鍵</li>
+                                        <li>系統檢查拼寫正確性</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h5>獲得回饋</h5>
+                                    <ul>
+                                        <li>正確：顯示祝賀和分數</li>
+                                        <li>錯誤：顯示正確拼寫和解釋</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 單字配對遊戲 -->
+                <div class="game-detail-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> 3. 單字配對遊戲</h3>
+                    
+                    <div class="game-description">
+                        <h4><i class="fas fa-info-circle"></i> 遊戲說明</h4>
+                        <ul>
+                            <li>將英文單字與中文翻譯或圖片配對</li>
+                            <li>加強單字理解和記憶聯結</li>
+                        </ul>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>單字配對遊戲介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="game-steps">
+                        <h4><i class="fas fa-star"></i> 操作步驟</h4>
+                        <div class="step-sequence">
+                            <div class="game-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5>觀察配對選項</h5>
+                                    <ul>
+                                        <li>左側顯示英文單字</li>
+                                        <li>右側顯示中文翻譯或圖片</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5><i class="fas fa-link"></i> 進行配對 ⭐</h5>
+                                    <ul>
+                                        <li>點擊一個英文單字</li>
+                                        <li>再點擊對應的中文或圖片</li>
+                                        <li>系統會用線條連接配對</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5>確認配對</h5>
+                                    <ul>
+                                        <li>完成所有配對後點擊「檢查答案」</li>
+                                        <li>或者每配對一組就立即顯示結果</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h5>查看成績</h5>
+                                    <ul>
+                                        <li>正確的配對顯示綠色或打勾</li>
+                                        <li>錯誤的配對顯示紅色或打叉</li>
+                                        <li>顯示總分和正確率</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 句子重組遊戲 -->
+                <div class="game-detail-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4. 句子重組遊戲</h3>
+                    
+                    <div class="game-description">
+                        <h4><i class="fas fa-info-circle"></i> 遊戲說明</h4>
+                        <ul>
+                            <li>將打亂的單字重新排列成正確的句子</li>
+                            <li>提升語法理解和句子結構認知</li>
+                        </ul>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>句子重組遊戲介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="game-steps">
+                        <h4><i class="fas fa-star"></i> 操作步驟</h4>
+                        <div class="step-sequence">
+                            <div class="game-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5>題目展示</h5>
+                                    <ul>
+                                        <li>系統顯示打亂順序的單字</li>
+                                        <li>可能提供中文翻譯作為提示</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5><i class="fas fa-arrows-alt"></i> 拖拉排序 ⭐</h5>
+                                    <ul>
+                                        <li>用滑鼠拖拉單字卡片</li>
+                                        <li>或點擊單字按順序排列</li>
+                                        <li>將單字排成有意義的句子</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5>檢查語法</h5>
+                                    <ul>
+                                        <li>確認句子語法正確</li>
+                                        <li>注意大小寫和標點符號</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h5>提交答案</h5>
+                                    <ul>
+                                        <li>點擊「完成」或「檢查」按鈕</li>
+                                        <li>系統評判句子是否正確</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 圖片差異遊戲 -->
+                <div class="game-detail-card">
+                    <h3><i class="fas fa-star"></i> 5. 圖片差異遊戲</h3>
+                    
+                    <div class="game-description">
+                        <h4><i class="fas fa-info-circle"></i> 遊戲說明</h4>
+                        <ul>
+                            <li>找出兩張相似圖片的差異點</li>
+                            <li>在找差異的過程中學習英語單字</li>
+                        </ul>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>圖片差異遊戲介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="game-steps">
+                        <h4>操作步驟</h4>
+                        <div class="step-sequence">
+                            <div class="game-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5>比較圖片</h5>
+                                    <ul>
+                                        <li>仔細觀察兩張圖片</li>
+                                        <li>尋找不同之處</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5>點擊差異點</h5>
+                                    <ul>
+                                        <li>在發現差異的地方點擊</li>
+                                        <li>系統會標示找到的差異</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="game-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5>學習單字</h5>
+                                    <ul>
+                                        <li>每找到一個差異點</li>
+                                        <li>系統教授相關的英語單字</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 遊戲成績系統 -->
+            <section class="content-section">
+                <h2><i class="fas fa-trophy"></i> 遊戲成績系統</h2>
+
+                <div class="scoring-system">
+                    <!-- 分數計算 -->
+                    <div class="score-card">
+                        <h3><i class="fas fa-calculator"></i> 分數計算</h3>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>遊戲分數計算介面截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="score-types">
+                            <div class="score-item">
+                                <i class="fas fa-plus"></i>
+                                <div class="score-content">
+                                    <h4>基本分數</h4>
+                                    <p>每答對一題獲得基本分數</p>
+                                </div>
+                            </div>
+                            <div class="score-item">
+                                <i class="fas fa-fire"></i>
+                                <div class="score-content">
+                                    <h4>連續答對</h4>
+                                    <p>連續正確答案有額外加分</p>
+                                </div>
+                            </div>
+                            <div class="score-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="score-content">
+                                    <h4>時間加分</h4>
+                                    <p>快速完成可獲得時間獎勵</p>
+                                </div>
+                            </div>
+                            <div class="score-item">
+                                <i class="fas fa-star"></i>
+                                <div class="score-content">
+                                    <h4>完美通關</h4>
+                                    <p>全部答對有完美獎勵</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 等級系統 -->
+                    <div class="level-card">
+                        <h3><i class="fas fa-level-up-alt"></i> 等級系統</h3>
+                        
+                        <div class="level-tiers">
+                            <div class="tier-item beginner">
+                                <div class="tier-icon">🔰</div>
+                                <h4>初學者</h4>
+                                <span class="tier-range">0-100分</span>
+                            </div>
+                            <div class="tier-item intermediate">
+                                <div class="tier-icon">📈</div>
+                                <h4>進步中</h4>
+                                <span class="tier-range">101-300分</span>
+                            </div>
+                            <div class="tier-item advanced">
+                                <div class="tier-icon">⚡</div>
+                                <h4>熟練者</h4>
+                                <span class="tier-range">301-500分</span>
+                            </div>
+                            <div class="tier-item expert">
+                                <div class="tier-icon">👑</div>
+                                <h4>專家級</h4>
+                                <span class="tier-range">501分以上</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 成就徽章 -->
+                    <div class="achievement-card">
+                        <h3><i class="fas fa-medal"></i> 成就徽章</h3>
+                        
+                        <div class="achievement-grid">
+                            <div class="achievement-item">
+                                <div class="badge">🏅</div>
+                                <div class="achievement-info">
+                                    <h4>首次通關</h4>
+                                    <p>完成任何遊戲一次</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="badge">🌟</div>
+                                <div class="achievement-info">
+                                    <h4>完美表現</h4>
+                                    <p>單次遊戲全對</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="badge">🔥</div>
+                                <div class="achievement-info">
+                                    <h4>連續挑戰</h4>
+                                    <p>連續多天玩遊戲</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="badge">👑</div>
+                                <div class="achievement-info">
+                                    <h4>遊戲高手</h4>
+                                    <p>多種遊戲都達到高分</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 遊戲策略與技巧 -->
+            <section class="content-section">
+                <h2><i class="fas fa-lightbulb"></i> 遊戲策略與技巧</h2>
+                
+                <div class="strategy-grid">
+                    <!-- 學生的遊戲技巧 -->
+                    <div class="strategy-card student">
+                        <div class="strategy-icon"><i class="fas fa-user-graduate"></i></div>
+                        <h3>👶 給學生的遊戲技巧</h3>
+                        <div class="tip-list">
+                            <div class="tip-item">
+                                <div class="tip-number">1</div>
+                                <div class="tip-content">
+                                    <strong>先易後難</strong>：從簡單關卡開始，逐步挑戰
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">2</div>
+                                <div class="tip-content">
+                                    <strong>重複練習</strong>：同一個遊戲可以多次挑戰提高分數
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">3</div>
+                                <div class="tip-content">
+                                    <strong>學習優先</strong>：專注學習而非只追求高分
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">4</div>
+                                <div class="tip-content">
+                                    <strong>總結反思</strong>：遊戲後回想學到的新單字或句型
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 家長的指導建議 -->
+                    <div class="strategy-card parent">
+                        <div class="strategy-icon"><i class="fas fa-users"></i></div>
+                        <h3>👨‍👩‍👧‍👦 給家長的指導建議</h3>
+                        <div class="tip-list">
+                            <div class="tip-item">
+                                <div class="tip-number">1</div>
+                                <div class="tip-content">
+                                    <strong>時間控制</strong>：合理控制孩子的遊戲時間
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">2</div>
+                                <div class="tip-content">
+                                    <strong>鼓勵參與</strong>：鼓勵孩子嘗試不同類型的遊戲
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">3</div>
+                                <div class="tip-content">
+                                    <strong>討論內容</strong>：和孩子討論遊戲中學到的英語知識
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">4</div>
+                                <div class="tip-content">
+                                    <strong>設定獎勵</strong>：為孩子的進步設定適當獎勵
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 老師的教學應用 -->
+                    <div class="strategy-card teacher">
+                        <div class="strategy-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3>👨‍🏫 給老師的教學應用</h3>
+                        <div class="tip-list">
+                            <div class="tip-item">
+                                <div class="tip-number">1</div>
+                                <div class="tip-content">
+                                    <strong>課堂活動</strong>：將遊戲融入課堂教學活動
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">2</div>
+                                <div class="tip-content">
+                                    <strong>分組競賽</strong>：組織學生進行遊戲比賽
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">3</div>
+                                <div class="tip-content">
+                                    <strong>作業安排</strong>：將遊戲作為有趣的課後作業
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">4</div>
+                                <div class="tip-content">
+                                    <strong>進度追蹤</strong>：追蹤學生的遊戲學習進度
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 學習成效追蹤 -->
+            <section class="content-section">
+                <h2><i class="fas fa-chart-line"></i> 學習成效追蹤</h2>
+                
+                <div class="tracking-section">
+                    <!-- 個人進度查看 -->
+                    <div class="tracking-card">
+                        <h3><i class="fas fa-user"></i> 個人進度查看</h3>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>個人遊戲進度頁面截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="progress-items">
+                            <div class="progress-item">
+                                <i class="fas fa-history"></i>
+                                <div class="progress-content">
+                                    <h4>遊戲記錄</h4>
+                                    <p>查看所有玩過的遊戲記錄</p>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <i class="fas fa-crown"></i>
+                                <div class="progress-content">
+                                    <h4>最高分數</h4>
+                                    <p>每種遊戲的個人最佳成績</p>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="progress-content">
+                                    <h4>學習時間</h4>
+                                    <p>在遊戲中投入的學習時間</p>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <i class="fas fa-brain"></i>
+                                <div class="progress-content">
+                                    <h4>掌握程度</h4>
+                                    <p>透過遊戲表現評估學習程度</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 學習建議 -->
+                    <div class="tracking-card">
+                        <h3><i class="fas fa-compass"></i> 學習建議</h3>
+                        <p>根據遊戲表現，系統會提供：</p>
+                        
+                        <div class="suggestion-items">
+                            <div class="suggestion-item">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div class="suggestion-content">
+                                    <h4>弱項提醒</h4>
+                                    <p>需要加強的學習領域</p>
+                                </div>
+                            </div>
+                            <div class="suggestion-item">
+                                <i class="fas fa-redo"></i>
+                                <div class="suggestion-content">
+                                    <h4>複習建議</h4>
+                                    <p>建議複習的單字或語法</p>
+                                </div>
+                            </div>
+                            <div class="suggestion-item">
+                                <i class="fas fa-star"></i>
+                                <div class="suggestion-content">
+                                    <h4>遊戲推薦</h4>
+                                    <p>推薦適合的下一個挑戰</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常見問題解決 -->
+            <section class="content-section">
+                <h2><i class="fas fa-question-circle"></i> 常見問題解決</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-turtle"></i>
+                            <span>Q1: 遊戲載入很慢或卡住？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>解決方法：</h5>
+                            <ul>
+                                <li><i class="fas fa-wifi"></i> 檢查網路連線速度</li>
+                                <li><i class="fas fa-window-close"></i> 關閉其他佔用記憶體的應用</li>
+                                <li><i class="fas fa-trash"></i> 清除瀏覽器快取</li>
+                                <li><i class="fas fa-sync-alt"></i> 重新整理頁面重新開始</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-volume-mute"></i>
+                            <span>Q2: 聲音無法播放？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>檢查步驟：</h5>
+                            <ul>
+                                <li><i class="fas fa-volume-up"></i> 確認設備音量已開啟</li>
+                                <li><i class="fas fa-key"></i> 檢查瀏覽器音頻權限設定</li>
+                                <li><i class="fas fa-headphones"></i> 確認耳機或喇叭連接正常</li>
+                                <li><i class="fas fa-test"></i> 嘗試在其他頁面測試音頻</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-hand-pointer"></i>
+                            <span>Q3: 觸控操作不靈敏？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>解決方法：</h5>
+                            <ul>
+                                <li><i class="fas fa-spray-can"></i> 確認觸控螢幕清潔無汙漬</li>
+                                <li><i class="fas fa-ban"></i> 檢查是否有其他應用干擾</li>
+                                <li><i class="fas fa-crosshairs"></i> 嘗試重新校準觸控設定</li>
+                                <li><i class="fas fa-mouse"></i> 使用滑鼠作為替代方案</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-save"></i>
+                            <span>Q4: 遊戲分數沒有保存？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>檢查項目：</h5>
+                            <ul>
+                                <li><i class="fas fa-sign-in-alt"></i> 確認已正確登入帳號</li>
+                                <li><i class="fas fa-network-wired"></i> 檢查網路連線是否穩定</li>
+                                <li><i class="fas fa-check-circle"></i> 確認遊戲完成後有看到儲存訊息</li>
+                                <li><i class="fas fa-user-cog"></i> 聯繫管理員檢查帳號設定</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教學檢查清單 -->
+            <section class="content-section">
+                <h2><i class="fas fa-clipboard-check"></i> 教學檢查清單</h2>
+                
+                <div class="checklist-container">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="games-check1">
+                        <label for="games-check1">能成功進入遊戲選單</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="games-check2">
+                        <label for="games-check2">能操作聽音選圖遊戲</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="games-check3">
+                        <label for="games-check3">能完成單字拼寫遊戲</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="games-check4">
+                        <label for="games-check4">能進行單字配對遊戲</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="games-check5">
+                        <label for="games-check5">能挑戰句子重組遊戲</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="games-check6">
+                        <label for="games-check6">理解遊戲分數和等級系統</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="games-check7">
+                        <label for="games-check7">能查看遊戲學習記錄</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="games-check8">
+                        <label for="games-check8">知道如何解決遊戲技術問題</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 相關學習主題 -->
+            <section class="content-section">
+                <h2><i class="fas fa-link"></i> 相關學習主題</h2>
+                
+                <div class="related-topics">
+                    <div class="topic-link-card">
+                        <div class="topic-type">搭配學習</div>
+                        <h4>單字卡學習</h4>
+                        <p>結合遊戲和單字卡，雙重強化記憶效果</p>
+                        <a href="vocabulary-guide.html" class="topic-link">前往學習</a>
+                    </div>
+                    
+                    <div class="topic-link-card">
+                        <div class="topic-type">綜合應用</div>
+                        <h4>點讀功能操作</h4>
+                        <p>點讀練習後透過遊戲鞏固所學內容</p>
+                        <a href="reading-guide.html" class="topic-link">前往學習</a>
+                    </div>
+                    
+                    <div class="topic-link-card">
+                        <div class="topic-type">學習優化</div>
+                        <h4>個人化設定</h4>
+                        <p>調整遊戲相關設定，提升學習體驗</p>
+                        <a href="settings-guide.html" class="topic-link">前往學習</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 頁面底部導航 -->
+            <nav class="page-navigation">
+                <a href="vocabulary-guide.html" class="nav-prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>上一頁：單字卡學習</span>
+                </a>
+                <a href="../backend/admin-guide.html" class="nav-next">
+                    <span>下一頁：後台管理教學</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </nav>
+        </main>
+
+        <!-- 頁腳 -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 ESL學習平台教學網站 - 專為ESL學習者設計的完整操作指南</p>
+                <div class="footer-links">
+                    <a href="../index.html">返回首頁</a>
+                    <a href="#top">回到頂部</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

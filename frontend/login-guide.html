@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入與註冊流程教學 - ESL學習平台教學指南</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/content-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>ESL學習平台教學指南</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">首頁</a></li>
+                    <li><a href="../index.html#frontend" class="nav-link active">前台教學</a></li>
+                    <li><a href="../index.html#backend" class="nav-link">後台教學</a></li>
+                    <li><a href="../index.html#resources" class="nav-link">資源工具</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="../index.html#frontend">前台教學</a></li>
+                <li>登入與註冊流程</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" class="content-page">
+        <div class="container">
+            <!-- Page Header -->
+            <header class="page-header">
+                <h1>
+                    <i class="fas fa-sign-in-alt"></i>
+                    登入與註冊流程教學
+                </h1>
+                <div class="page-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>適用對象：學生、家長、老師</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>預估時間：5-10分鐘</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-layer-group"></i>
+                        <span>難度等級：基礎</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <div class="toc-container">
+                <h2><i class="fas fa-list"></i> 教學內容目錄</h2>
+                <ul class="toc">
+                    <li><a href="#objectives">🎯 學習目標</a></li>
+                    <li><a href="#initial-access">📱 初次進入系統</a></li>
+                    <li><a href="#login-process">🔐 登入操作步驟</a></li>
+                    <li><a href="#successful-login">✅ 登入成功確認</a></li>
+                    <li><a href="#common-issues">⚠️ 常見問題處理</a></li>
+                    <li><a href="#tips">💡 操作小技巧</a></li>
+                    <li><a href="#checklist">📋 教學檢查清單</a></li>
+                </ul>
+            </div>
+
+            <!-- Content Sections -->
+            <section id="objectives" class="content-section">
+                <h2><i class="fas fa-bullseye"></i> 學習目標</h2>
+                <div class="objective-box">
+                    <p>完成本教學後，您將能夠：</p>
+                    <ul class="checklist">
+                        <li>熟悉平台登入頁面的各個元素</li>
+                        <li>正確輸入帳號和密碼進行登入</li>
+                        <li>識別登入成功的標誌</li>
+                        <li>處理常見的登入問題</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="initial-access" class="content-section">
+                <h2><i class="fas fa-play-circle"></i> 初次進入系統</h2>
+                
+                <div class="step-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>開啟網頁</h3>
+                            <p>在瀏覽器輸入平台網址，等待載入完成。</p>
+                            <div class="image-placeholder-container">
+                                <div class="image-placeholder" onclick="showImageUploadInstructions(this, 'browser-address-bar')">
+                                    <i class="fas fa-browser"></i>
+                                    <p>瀏覽器網址列截圖</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>等待載入</h3>
+                            <p>系統會顯示啟動畫面（Logo），請耐心等待。</p>
+                            <div class="image-placeholder-container">
+                                <div class="image-placeholder" onclick="showImageUploadInstructions(this, 'loading-screen')">
+                                    <i class="fas fa-spinner"></i>
+                                    <p>載入畫面截圖</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>進入登入頁面</h3>
+                            <p>啟動畫面後自動跳轉到登入頁面，可看到登入表單。</p>
+                            <div class="image-placeholder-container">
+                                <div class="image-placeholder" onclick="showImageUploadInstructions(this, 'login-page')">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                    <p>登入頁面完整截圖</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="login-process" class="content-section">
+                <h2><i class="fas fa-key"></i> 登入操作步驟 ⭐</h2>
+                
+                <div class="important-note">
+                    <i class="fas fa-star"></i>
+                    <p><strong>重要：</strong>以下步驟是成功登入的關鍵，請仔細按順序操作。</p>
+                </div>
+
+                <div class="step-container">
+                    <div class="step-item featured">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>輸入帳號資訊</h3>
+                            <ul>
+                                <li>點擊「用戶名/Email」欄位</li>
+                                <li>輸入您的帳號或電子信箱</li>
+                                <li>確認沒有多餘的空格</li>
+                            </ul>
+                            <div class="image-placeholder-container">
+                                <div class="image-placeholder" onclick="showImageUploadInstructions(this, 'username-field')">
+                                    <i class="fas fa-user"></i>
+                                    <p>帳號輸入欄位截圖（標註點擊位置）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item featured">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>輸入密碼</h3>
+                            <ul>
+                                <li>點擊「密碼」欄位</li>
+                                <li>輸入您的密碼</li>
+                                <li>可點擊眼睛圖示顯示/隱藏密碼</li>
+                            </ul>
+                            <div class="image-placeholder-container">
+                                <div class="image-placeholder" onclick="showImageUploadInstructions(this, 'password-field')">
+                                    <i class="fas fa-lock"></i>
+                                    <p>密碼輸入欄位截圖（標註眼睛圖示）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-item featured">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>確認登入</h3>
+                            <ul>
+                                <li>檢查帳號密碼輸入正確</li>
+                                <li>點擊「登入」按鈕</li>
+                                <li>等待系統驗證（會顯示載入動畫）</li>
+                            </ul>
+                            <div class="image-placeholder-container">
+                                <div class="image-placeholder" onclick="showImageUploadInstructions(this, 'login-button')">
+                                    <i class="fas fa-mouse-pointer"></i>
+                                    <p>登入按鈕截圖（標註點擊位置）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="successful-login" class="content-section">
+                <h2><i class="fas fa-check-circle"></i> 登入成功確認</h2>
+                
+                <div class="success-indicators">
+                    <h3>成功登入的標誌：</h3>
+                    <div class="indicator-grid">
+                        <div class="indicator-item">
+                            <i class="fas fa-home"></i>
+                            <div>
+                                <h4>頁面跳轉</h4>
+                                <p>自動跳轉到主頁面</p>
+                            </div>
+                        </div>
+                        <div class="indicator-item">
+                            <i class="fas fa-user-check"></i>
+                            <div>
+                                <h4>歡迎訊息</h4>
+                                <p>顯示「歡迎，[您的用戶名]」</p>
+                            </div>
+                        </div>
+                        <div class="indicator-item">
+                            <i class="fas fa-th-large"></i>
+                            <div>
+                                <h4>功能選單</h4>
+                                <p>可看到教材預覽和學習功能</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-placeholder-container">
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this, 'homepage-after-login')">
+                        <i class="fas fa-desktop"></i>
+                        <p>登入成功後的主頁面截圖</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="common-issues" class="content-section">
+                <h2><i class="fas fa-exclamation-triangle"></i> 常見問題處理</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Q1: 忘記密碼怎麼辦？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="solution-steps">
+                                <div class="solution-step">
+                                    <i class="fas fa-mouse-pointer"></i>
+                                    <p>點擊登入頁面的「忘記密碼」連結</p>
+                                </div>
+                                <div class="solution-step">
+                                    <i class="fas fa-envelope"></i>
+                                    <p>輸入您註冊時使用的email</p>
+                                </div>
+                                <div class="solution-step">
+                                    <i class="fas fa-inbox"></i>
+                                    <p>檢查信箱並依照指示重設密碼</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Q2: 登入失敗怎麼辦？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="solution-steps">
+                                <div class="solution-step">
+                                    <i class="fas fa-wifi"></i>
+                                    <p>確認網路連線正常</p>
+                                </div>
+                                <div class="solution-step">
+                                    <i class="fas fa-spell-check"></i>
+                                    <p>檢查帳號密碼是否正確</p>
+                                </div>
+                                <div class="solution-step">
+                                    <i class="fas fa-space-shuttle"></i>
+                                    <p>確認沒有多餘空格</p>
+                                </div>
+                                <div class="solution-step">
+                                    <i class="fas fa-user-cog"></i>
+                                    <p>聯繫管理員協助</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Q3: 沒有帳號怎麼辦？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="solution-steps">
+                                <div class="solution-step">
+                                    <i class="fas fa-phone"></i>
+                                    <p>聯繫學校或機構管理員</p>
+                                </div>
+                                <div class="solution-step">
+                                    <i class="fas fa-user-plus"></i>
+                                    <p>由管理員協助建立帳號</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tips" class="content-section">
+                <h2><i class="fas fa-lightbulb"></i> 操作小技巧</h2>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fas fa-save"></i>
+                        <h3>記住帳號</h3>
+                        <p>瀏覽器可能會詢問是否記住帳號密碼，可依個人需求選擇。</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>安全登出</h3>
+                        <p>使用完畢請記得登出，保護帳號安全。</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>多設備使用</h3>
+                        <p>同一帳號可在不同設備登入使用。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="checklist" class="content-section">
+                <h2><i class="fas fa-tasks"></i> 教學檢查清單</h2>
+                
+                <div class="checklist-container">
+                    <p>完成學習後，請確認您已掌握以下技能：</p>
+                    <div class="checklist">
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            能成功開啟平台網頁
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            能找到並點擊輸入欄位
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            能正確輸入帳號密碼
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            能成功登入進入主頁面
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            知道如何處理登入問題
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <nav class="content-navigation">
+                <a href="../index.html#frontend" class="nav-btn nav-prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>返回前台教學</span>
+                </a>
+                <a href="homepage-guide.html" class="nav-btn nav-next">
+                    <span>下一步：首頁功能介紹</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ESL學習平台教學指南</h3>
+                    <p>提供完整、專業的平台操作教學資源</p>
+                </div>
+                <div class="footer-section">
+                    <h4>相關教學</h4>
+                    <ul>
+                        <li><a href="homepage-guide.html">首頁功能介紹</a></li>
+                        <li><a href="settings-guide.html">設定頁面使用</a></li>
+                        <li><a href="reading-guide.html">點讀功能操作</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ESL學習平台教學指南. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/content-page.js"></script>
+</body>
+</html>

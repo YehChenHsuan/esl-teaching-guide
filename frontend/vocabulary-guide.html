@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單字卡學習 - ESL學習平台教學網站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 頂部導航 -->
+        <nav class="top-nav">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-home"></i>
+                教學網站首頁
+            </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- 主要內容 -->
+        <main class="main-content">
+            <!-- 頁面標題 -->
+            <header class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">首頁</a>
+                    <span>/</span>
+                    <a href="../index.html#frontend">前台操作</a>
+                    <span>/</span>
+                    <span>單字卡學習</span>
+                </div>
+                <h1><i class="fas fa-language"></i> 單字卡學習教學</h1>
+                <div class="page-meta">
+                    <span class="tag"><i class="fas fa-bullseye"></i> 學習目標：掌握單字卡功能，有效進行單字學習和記憶強化</span>
+                    <span class="tag"><i class="fas fa-users"></i> 適用對象：學生、家長、老師</span>
+                </div>
+            </header>
+
+            <!-- 單字卡功能介紹 -->
+            <section class="content-section">
+                <h2><i class="fas fa-address-card"></i> 單字卡功能介紹</h2>
+                <div class="topic-card">
+                    <p>單字卡是專為單字學習設計的功能，提供：</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <span>視覺化單字呈現</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-volume-up"></i>
+                            <span>標準發音播放</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>記憶狀態追蹤</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>複習計劃安排</span>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>單字卡功能總覽截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 完整操作流程 -->
+            <section class="content-section">
+                <h2><i class="fas fa-play-circle"></i> 完整操作流程</h2>
+
+                <!-- 進入單字卡功能 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> A. 進入單字卡功能</h3>
+                    
+                    <div class="entry-methods">
+                        <div class="method-item">
+                            <h4><i class="fas fa-home"></i> 1. 從首頁進入</h4>
+                            <ul>
+                                <li>點擊首頁「📚 單字學習」按鈕</li>
+                                <li>或點擊「單字卡」相關連結</li>
+                            </ul>
+                        </div>
+
+                        <div class="method-item">
+                            <h4><i class="fas fa-list"></i> 2. 選擇學習內容</h4>
+                            <ul>
+                                <li>進入單字書選擇頁面</li>
+                                <li>可看到不同教材的單字書列表</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>進入單字卡功能的步驟截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+
+                <!-- 單字書選擇 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> B. 單字書選擇</h3>
+
+                    <div class="selection-process">
+                        <div class="process-step">
+                            <h4><i class="fas fa-search"></i> 1. 瀏覽可用單字書</h4>
+                            <p>顯示各教材對應的單字書，每個單字書會顯示：</p>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-book"></i>
+                                    <span>教材名稱和級別</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-hashtag"></i>
+                                    <span>單字數量</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-percentage"></i>
+                                    <span>學習進度百分比</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="process-step">
+                            <h4><i class="fas fa-mouse-pointer"></i> 2. 選擇單字書 ⭐</h4>
+                            <div class="step-flow">
+                                <div class="flow-item">點擊想要學習的單字書</div>
+                                <i class="fas fa-arrow-down"></i>
+                                <div class="flow-item">系統載入該書的所有單字</div>
+                                <i class="fas fa-arrow-down"></i>
+                                <div class="flow-item">進入單字卡學習介面</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>單字書選擇頁面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+
+                <!-- 單字卡學習操作 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> C. 單字卡學習操作</h3>
+
+                    <!-- 單字卡介面 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-id-card"></i> 1. 基本單字卡介面</h4>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>單字卡正面和背面介面截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="card-structure">
+                            <div class="card-side front">
+                                <h5><i class="fas fa-front"></i> 卡片正面：</h5>
+                                <ul>
+                                    <li>顯示英文單字</li>
+                                    <li>可能包含音標</li>
+                                    <li>播放按鈕（喇叭圖示）</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-side back">
+                                <h5><i class="fas fa-back"></i> 卡片背面：</h5>
+                                <ul>
+                                    <li>顯示中文翻譯</li>
+                                    <li>可能包含例句</li>
+                                    <li>使用情境說明</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 基本操作步驟 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-star"></i> 2. 基本操作步驟</h4>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>單字卡基本操作步驟示範截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="operation-workflow">
+                            <div class="workflow-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5><i class="fas fa-eye"></i> 查看單字</h5>
+                                    <ul>
+                                        <li>單字卡預設顯示英文單字</li>
+                                        <li>仔細觀察單字拼寫</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="workflow-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5><i class="fas fa-volume-up"></i> 聆聽發音 ⭐</h5>
+                                    <ul>
+                                        <li>點擊播放按鈕（🔊）</li>
+                                        <li>聆聽標準英文發音</li>
+                                        <li>可重複點擊多次聆聽</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="workflow-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5><i class="fas fa-sync-alt"></i> 翻轉卡片看翻譯</h5>
+                                    <ul>
+                                        <li>點擊卡片或「翻轉」按鈕</li>
+                                        <li>查看中文翻譯和詳細資訊</li>
+                                        <li>理解單字含義</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="workflow-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h5><i class="fas fa-star"></i><i class="fas fa-star"></i> 標記熟悉程度</h5>
+                                    <p>通常會有以下選項：</p>
+                                    <div class="familiarity-options">
+                                        <div class="option unfamiliar">
+                                            <i class="fas fa-times"></i>
+                                            <strong>不熟悉</strong>：完全不認識或不記得
+                                        </div>
+                                        <div class="option partial">
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <strong>有印象</strong>：有些印象但不太確定
+                                        </div>
+                                        <div class="option familiar">
+                                            <i class="fas fa-check"></i>
+                                            <strong>熟悉</strong>：完全認識並記得意思
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="workflow-step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h5><i class="fas fa-forward"></i> 進行下一張卡片</h5>
+                                    <ul>
+                                        <li>根據熟悉程度選擇後</li>
+                                        <li>系統自動顯示下一張單字卡</li>
+                                        <li>重複學習流程</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 進階學習功能 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-cog"></i> D. 進階學習功能</h3>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>進階學習功能設定截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="advanced-features">
+                        <!-- 學習模式選擇 -->
+                        <div class="feature-section">
+                            <h4><i class="fas fa-list"></i> 1. 學習模式選擇</h4>
+                            <div class="mode-grid">
+                                <div class="mode-card">
+                                    <div class="mode-icon"><i class="fas fa-plus"></i></div>
+                                    <h5>新單字模式</h5>
+                                    <p>只學習未學過的單字</p>
+                                </div>
+                                <div class="mode-card">
+                                    <div class="mode-icon"><i class="fas fa-redo"></i></div>
+                                    <h5>複習模式</h5>
+                                    <p>復習之前標記為不熟悉的單字</p>
+                                </div>
+                                <div class="mode-card">
+                                    <div class="mode-icon"><i class="fas fa-globe"></i></div>
+                                    <h5>全部模式</h5>
+                                    <p>學習所有單字</p>
+                                </div>
+                                <div class="mode-card">
+                                    <div class="mode-icon"><i class="fas fa-random"></i></div>
+                                    <h5>隨機模式</h5>
+                                    <p>隨機順序顯示單字</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 自動播放功能 -->
+                        <div class="feature-section">
+                            <h4><i class="fas fa-play-circle"></i> 2. 自動播放功能</h4>
+                            <div class="auto-play-settings">
+                                <div class="setting-item">
+                                    <h5><i class="fas fa-toggle-on"></i> 開啟自動播放：</h5>
+                                    <ul>
+                                        <li>找到自動播放開關</li>
+                                        <li>開啟後每張卡片會自動播放發音</li>
+                                    </ul>
+                                </div>
+                                <div class="setting-item">
+                                    <h5><i class="fas fa-clock"></i> 調整播放間隔：</h5>
+                                    <ul>
+                                        <li>設定每張卡片的顯示時間</li>
+                                        <li>適合不同學習節奏</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 批次學習設定 -->
+                        <div class="feature-section">
+                            <h4><i class="fas fa-layer-group"></i> 3. 批次學習設定</h4>
+                            <div class="batch-settings">
+                                <div class="setting-item">
+                                    <h5><i class="fas fa-hashtag"></i> 設定每次學習數量：</h5>
+                                    <ul>
+                                        <li>選擇每次學習的單字卡數量</li>
+                                        <li>建議初學者選擇10-15張</li>
+                                    </ul>
+                                </div>
+                                <div class="setting-item">
+                                    <h5><i class="fas fa-target"></i> 設定學習目標：</h5>
+                                    <ul>
+                                        <li>每日學習目標設定</li>
+                                        <li>系統會追蹤完成進度</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 學習策略建議 -->
+            <section class="content-section">
+                <h2><i class="fas fa-lightbulb"></i> 學習策略建議</h2>
+                
+                <div class="strategy-grid">
+                    <!-- 學生學習方法 -->
+                    <div class="strategy-card student">
+                        <div class="strategy-icon"><i class="fas fa-user-graduate"></i></div>
+                        <h3>👶 學生學習方法</h3>
+                        <div class="strategy-list">
+                            <div class="strategy-item">
+                                <i class="fas fa-clock"></i>
+                                <span><strong>每日固定時間</strong>：建立固定的單字學習時間</span>
+                            </div>
+                            <div class="strategy-item">
+                                <i class="fas fa-less-than"></i>
+                                <span><strong>少量多次</strong>：每次學習10-15個新單字</span>
+                            </div>
+                            <div class="strategy-item">
+                                <i class="fas fa-repeat"></i>
+                                <span><strong>重複複習</strong>：及時複習標記為不熟悉的單字</span>
+                            </div>
+                            <div class="strategy-item">
+                                <i class="fas fa-microphone"></i>
+                                <span><strong>發音練習</strong>：跟著標準發音練習說出單字</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 家長協助方法 -->
+                    <div class="strategy-card parent">
+                        <div class="strategy-icon"><i class="fas fa-users"></i></div>
+                        <h3>👨‍👩‍👧‍👦 家長協助方法</h3>
+                        <div class="strategy-list">
+                            <div class="strategy-item">
+                                <i class="fas fa-hands-helping"></i>
+                                <span><strong>陪伴學習</strong>：初期陪同孩子一起學習</span>
+                            </div>
+                            <div class="strategy-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span><strong>檢查進度</strong>：定期檢查孩子的學習記錄</span>
+                            </div>
+                            <div class="strategy-item">
+                                <i class="fas fa-heart"></i>
+                                <span><strong>鼓勵練習</strong>：鼓勵孩子每天堅持學習</span>
+                            </div>
+                            <div class="strategy-item">
+                                <i class="fas fa-home"></i>
+                                <span><strong>創造情境</strong>：在日常生活中使用學過的單字</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 教師教學應用 -->
+                    <div class="strategy-card teacher">
+                        <div class="strategy-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3>👨‍🏫 教師教學應用</h3>
+                        <div class="strategy-list">
+                            <div class="strategy-item">
+                                <i class="fas fa-book-reader"></i>
+                                <span><strong>課前預習</strong>：指派學生預習課文單字</span>
+                            </div>
+                            <div class="strategy-item">
+                                <i class="fas fa-question-circle"></i>
+                                <span><strong>課堂測驗</strong>：使用單字卡進行課堂小測驗</span>
+                            </div>
+                            <div class="strategy-item">
+                                <i class="fas fa-trophy"></i>
+                                <span><strong>分組競賽</strong>：組織單字學習競賽活動</span>
+                            </div>
+                            <div class="strategy-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span><strong>進度追蹤</strong>：監控學生的單字學習進度</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 學習記錄功能 -->
+            <section class="content-section">
+                <h2><i class="fas fa-chart-line"></i> 學習記錄功能</h2>
+                
+                <div class="records-section">
+                    <!-- 學習統計 -->
+                    <div class="record-card">
+                        <h3><i class="fas fa-chart-pie"></i> 查看學習統計</h3>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>學習統計頁面截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="stat-content">
+                                    <h4>學習時間</h4>
+                                    <p>總學習時間和今日學習時間</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-list-ol"></i>
+                                <div class="stat-content">
+                                    <h4>單字數量</h4>
+                                    <p>已學單字數量和剩餘數量</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-pie-chart"></i>
+                                <div class="stat-content">
+                                    <h4>熟悉程度分佈</h4>
+                                    <p>不同熟悉程度的單字比例</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-trending-up"></i>
+                                <div class="stat-content">
+                                    <h4>學習趨勢</h4>
+                                    <p>最近學習的趨勢圖表</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 複習計劃 -->
+                    <div class="record-card">
+                        <h3><i class="fas fa-calendar-check"></i> 複習計劃</h3>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>複習計劃介面截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="review-features">
+                            <div class="review-item">
+                                <i class="fas fa-brain"></i>
+                                <div class="review-content">
+                                    <h4>系統智能提醒</h4>
+                                    <p>根據遺忘曲線安排複習</p>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <i class="fas fa-hand-paper"></i>
+                                <div class="review-content">
+                                    <h4>自訂複習</h4>
+                                    <p>手動選擇需要複習的單字</p>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div class="review-content">
+                                    <h4>弱項加強</h4>
+                                    <p>針對不熟悉的單字加強練習</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 使用技巧 -->
+            <section class="content-section">
+                <h2><i class="fas fa-magic"></i> 使用技巧</h2>
+                
+                <div class="tips-section">
+                    <!-- 提高學習效率 -->
+                    <div class="tip-card efficiency">
+                        <h3><i class="fas fa-rocket"></i> 提高學習效率</h3>
+                        <div class="tip-list">
+                            <div class="tip-item">
+                                <div class="tip-number">1</div>
+                                <div class="tip-content">
+                                    <strong>利用碎片時間</strong>：搭車、等車時間學習單字
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">2</div>
+                                <div class="tip-content">
+                                    <strong>多感官學習</strong>：同時看、聽、讀單字
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">3</div>
+                                <div class="tip-content">
+                                    <strong>聯想記憶</strong>：建立單字與生活經驗的聯繫
+                                </div>
+                            </div>
+                            <div class="tip-item">
+                                <div class="tip-number">4</div>
+                                <div class="tip-content">
+                                    <strong>定期複習</strong>：遵循記憶曲線規律複習
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 避免常見錯誤 -->
+                    <div class="tip-card mistakes">
+                        <h3><i class="fas fa-times-circle"></i> 避免常見錯誤</h3>
+                        <div class="mistake-list">
+                            <div class="mistake-item">
+                                <i class="fas fa-ban"></i>
+                                <div class="mistake-content">
+                                    <strong>不要貪多</strong>：一次學習太多單字容易忘記
+                                </div>
+                            </div>
+                            <div class="mistake-item">
+                                <i class="fas fa-ban"></i>
+                                <div class="mistake-content">
+                                    <strong>不要只看不聽</strong>：一定要聆聽標準發音
+                                </div>
+                            </div>
+                            <div class="mistake-item">
+                                <i class="fas fa-ban"></i>
+                                <div class="mistake-content">
+                                    <strong>不要跳過複習</strong>：複習比學新單字更重要
+                                </div>
+                            </div>
+                            <div class="mistake-item">
+                                <i class="fas fa-ban"></i>
+                                <div class="mistake-content">
+                                    <strong>不要死記硬背</strong>：理解單字在句子中的用法
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常見問題解決 -->
+            <section class="content-section">
+                <h2><i class="fas fa-question-circle"></i> 常見問題解決</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-volume-mute"></i>
+                            <span>Q1: 單字卡沒有聲音？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>解決步驟：</h5>
+                            <ul>
+                                <li><i class="fas fa-volume-up"></i> 檢查設備音量設定</li>
+                                <li><i class="fas fa-chrome"></i> 確認瀏覽器允許音頻播放</li>
+                                <li><i class="fas fa-wifi"></i> 檢查網路連線狀態</li>
+                                <li><i class="fas fa-sync-alt"></i> 嘗試重新載入頁面</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-save"></i>
+                            <span>Q2: 學習記錄沒有保存？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>檢查項目：</h5>
+                            <ul>
+                                <li><i class="fas fa-sign-in-alt"></i> 確認已正確登入帳號</li>
+                                <li><i class="fas fa-network-wired"></i> 檢查網路連線是否穩定</li>
+                                <li><i class="fas fa-check-circle"></i> 確認操作後有看到儲存提示</li>
+                                <li><i class="fas fa-user-cog"></i> 聯繫管理員檢查帳號設定</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-search"></i>
+                            <span>Q3: 找不到想學的單字書？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>解決方法：</h5>
+                            <ul>
+                                <li><i class="fas fa-book"></i> 確認該教材是否有對應的單字書</li>
+                                <li><i class="fas fa-key"></i> 檢查是否有權限訪問該內容</li>
+                                <li><i class="fas fa-phone"></i> 聯繫老師或管理員確認課程設定</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-redo"></i>
+                            <span>Q4: 複習功能沒有作用？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>檢查步驟：</h5>
+                            <ul>
+                                <li><i class="fas fa-star"></i> 確認之前有正確標記單字熟悉程度</li>
+                                <li><i class="fas fa-cog"></i> 檢查複習設定是否正確</li>
+                                <li><i class="fas fa-clock"></i> 等待系統更新學習記錄（可能需要幾分鐘）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 學習成效評估 -->
+            <section class="content-section">
+                <h2><i class="fas fa-trophy"></i> 學習成效評估</h2>
+                
+                <div class="assessment-section">
+                    <!-- 每週自我檢測 -->
+                    <div class="assessment-card">
+                        <h3><i class="fas fa-check-double"></i> 每週自我檢測</h3>
+                        <div class="test-types">
+                            <div class="test-item">
+                                <div class="test-number">1</div>
+                                <div class="test-content">
+                                    <h4>認字測試</h4>
+                                    <p>隨機選擇學過的單字，看英文說中文</p>
+                                </div>
+                            </div>
+                            <div class="test-item">
+                                <div class="test-number">2</div>
+                                <div class="test-content">
+                                    <h4>聽力測試</h4>
+                                    <p>聽發音寫出正確拼寫</p>
+                                </div>
+                            </div>
+                            <div class="test-item">
+                                <div class="test-number">3</div>
+                                <div class="test-content">
+                                    <h4>應用測試</h4>
+                                    <p>嘗試將單字運用在句子中</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 學習進度目標 -->
+                    <div class="assessment-card">
+                        <h3><i class="fas fa-calendar-alt"></i> 學習進度目標</h3>
+                        <div class="progress-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker">第1週</div>
+                                <div class="timeline-content">
+                                    <h4>基礎建立</h4>
+                                    <p>熟悉操作流程，學習20-30個基礎單字</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker">第2週</div>
+                                <div class="timeline-content">
+                                    <h4>節奏掌握</h4>
+                                    <p>掌握學習節奏，累積50-70個單字</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker">第3週</div>
+                                <div class="timeline-content">
+                                    <h4>習慣養成</h4>
+                                    <p>建立複習習慣，掌握80-120個單字</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker">第4週</div>
+                                <div class="timeline-content">
+                                    <h4>目標達成</h4>
+                                    <p>達成學習目標，能流暢使用所有功能</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教學檢查清單 -->
+            <section class="content-section">
+                <h2><i class="fas fa-clipboard-check"></i> 教學檢查清單</h2>
+                
+                <div class="checklist-container">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-check1">
+                        <label for="vocab-check1">能進入單字卡功能頁面</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-check2">
+                        <label for="vocab-check2">能選擇想要學習的單字書</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-check3">
+                        <label for="vocab-check3">能操作單字卡的翻轉功能</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-check4">
+                        <label for="vocab-check4">能播放單字發音</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-check5">
+                        <label for="vocab-check5">能標記單字熟悉程度</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-check6">
+                        <label for="vocab-check6">能查看學習記錄和統計</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-check7">
+                        <label for="vocab-check7">能使用複習功能</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-check8">
+                        <label for="vocab-check8">知道如何解決常見問題</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 相關學習主題 -->
+            <section class="content-section">
+                <h2><i class="fas fa-link"></i> 相關學習主題</h2>
+                
+                <div class="related-topics">
+                    <div class="topic-link-card">
+                        <div class="topic-type">搭配功能</div>
+                        <h4>點讀功能操作</h4>
+                        <p>結合點讀和單字卡學習，增強學習效果</p>
+                        <a href="reading-guide.html" class="topic-link">前往學習</a>
+                    </div>
+                    
+                    <div class="topic-link-card">
+                        <div class="topic-type">進階應用</div>
+                        <h4>互動遊戲</h4>
+                        <p>透過遊戲化方式強化單字記憶</p>
+                        <a href="games-guide.html" class="topic-link">前往學習</a>
+                    </div>
+                    
+                    <div class="topic-link-card">
+                        <div class="topic-type">系統設定</div>
+                        <h4>個人化設定</h4>
+                        <p>調整學習環境以提升單字學習效果</p>
+                        <a href="settings-guide.html" class="topic-link">前往學習</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 頁面底部導航 -->
+            <nav class="page-navigation">
+                <a href="reading-guide.html" class="nav-prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>上一頁：點讀功能操作</span>
+                </a>
+                <a href="games-guide.html" class="nav-next">
+                    <span>下一頁：互動遊戲玩法</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </nav>
+        </main>
+
+        <!-- 頁腳 -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 ESL學習平台教學網站 - 專為ESL學習者設計的完整操作指南</p>
+                <div class="footer-links">
+                    <a href="../index.html">返回首頁</a>
+                    <a href="#top">回到頂部</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

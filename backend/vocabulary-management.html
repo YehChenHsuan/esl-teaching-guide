@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>單字卡新增編輯 - ESL學習平台教學網站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 頂部導航 -->
+        <nav class="top-nav">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-home"></i>
+                教學網站首頁
+            </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- 主要內容 -->
+        <main class="main-content">
+            <!-- 頁面標題 -->
+            <header class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">首頁</a>
+                    <span>/</span>
+                    <a href="../index.html#backend">後台操作</a>
+                    <span>/</span>
+                    <span>單字卡新增編輯</span>
+                </div>
+                <h1><i class="fas fa-language"></i> 單字卡新增編輯教學</h1>
+                <div class="page-meta">
+                    <span class="tag"><i class="fas fa-bullseye"></i> 學習目標：掌握單字卡的新增、編輯、刪除等完整管理操作</span>
+                    <span class="tag"><i class="fas fa-users"></i> 適用對象：行政人員、內容管理員</span>
+                </div>
+            </header>
+
+            <!-- 單字卡管理功能簡介 -->
+            <section class="content-section">
+                <h2><i class="fas fa-address-card"></i> 單字卡管理功能簡介</h2>
+                <div class="topic-card">
+                    <p>單字卡管理是後台的核心功能之一，讓管理員能夠：</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-plus"></i>
+                            <span>為各教材新增單字卡內容</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-edit"></i>
+                            <span>編輯現有單字的資訊</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tags"></i>
+                            <span>管理單字的分類和難度</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <span>控制單字的顯示狀態</span>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>單字卡管理功能總覽截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 完整操作流程 -->
+            <section class="content-section">
+                <h2><i class="fas fa-play-circle"></i> 完整操作流程</h2>
+
+                <!-- 進入單字管理功能 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> A. 進入單字管理功能</h3>
+                    
+                    <div class="access-steps">
+                        <div class="access-step">
+                            <h4><i class="fas fa-tachometer-alt"></i> 1. 從後台主控台進入</h4>
+                            <ul>
+                                <li>登入管理後台</li>
+                                <li>在功能卡片中找到「📚 單字管理」</li>
+                                <li>點擊卡片進入單字管理系統</li>
+                            </ul>
+                        </div>
+
+                        <div class="access-step">
+                            <h4><i class="fas fa-list"></i> 2. 單字管理主頁面</h4>
+                            <ul>
+                                <li>顯示所有可管理的教材列表</li>
+                                <li>每個教材顯示已有單字數量</li>
+                                <li>提供搜尋和篩選功能</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>進入單字管理功能的步驟截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+
+                <!-- 選擇目標教材 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> B. 選擇目標教材</h3>
+                    
+                    <div class="selection-process">
+                        <div class="selection-step">
+                            <h4><i class="fas fa-book"></i> 1. 教材選擇</h4>
+                            <ul>
+                                <li>瀏覽可用教材列表</li>
+                                <li>點擊想要管理單字的教材</li>
+                                <li>進入該教材的單字管理頁面</li>
+                            </ul>
+                        </div>
+
+                        <div class="selection-step">
+                            <h4><i class="fas fa-table"></i> 2. 單字列表查看</h4>
+                            <p>顯示該教材所有單字卡，可看到每個單字的基本資訊：</p>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-font"></i>
+                                    <span>英文單字</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-language"></i>
+                                    <span>中文翻譯</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>創建日期</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-toggle-on"></i>
+                                    <span>狀態（啟用/停用）</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>教材選擇和單字列表頁面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 新增單字卡操作 -->
+            <section class="content-section">
+                <h2><i class="fas fa-plus-circle"></i> 新增單字卡操作</h2>
+
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> C. 新增單字卡</h3>
+
+                    <!-- 啟動新增功能 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-power-off"></i> 1. 啟動新增功能</h4>
+                        <ul>
+                            <li>在單字列表頁面找到「＋ 新增單字」按鈕</li>
+                            <li>點擊按鈕開啟新增單字表單</li>
+                        </ul>
+
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>新增單字按鈕位置截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+                    </div>
+
+                    <!-- 填寫單字基本資訊 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-star"></i> 2. 填寫單字基本資訊</h4>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>新增單字表單截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="form-fields">
+                            <!-- 必填欄位 -->
+                            <div class="field-group required">
+                                <h5><i class="fas fa-asterisk"></i> 必填欄位：</h5>
+                                
+                                <div class="field-item">
+                                    <div class="field-icon"><i class="fas fa-font"></i></div>
+                                    <div class="field-content">
+                                        <h6>英文單字</h6>
+                                        <ul>
+                                            <li>輸入標準英文拼寫</li>
+                                            <li>注意大小寫正確性</li>
+                                            <li>確認拼寫無誤</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="field-item">
+                                    <div class="field-icon"><i class="fas fa-language"></i></div>
+                                    <div class="field-content">
+                                        <h6>中文翻譯</h6>
+                                        <ul>
+                                            <li>輸入準確的中文意思</li>
+                                            <li>可輸入多個意思（用逗號分隔）</li>
+                                            <li>確保翻譯適合學習對象</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 選填欄位 -->
+                            <div class="field-group optional">
+                                <h5><i class="fas fa-plus"></i> 選填欄位：</h5>
+                                
+                                <div class="optional-fields">
+                                    <div class="optional-field">
+                                        <i class="fas fa-volume-up"></i>
+                                        <span><strong>音標</strong>：輸入國際音標（IPA）</span>
+                                    </div>
+                                    <div class="optional-field">
+                                        <i class="fas fa-tag"></i>
+                                        <span><strong>詞性</strong>：選擇適當詞性（名詞、動詞等）</span>
+                                    </div>
+                                    <div class="optional-field">
+                                        <i class="fas fa-layer-group"></i>
+                                        <span><strong>難度等級</strong>：設定學習難度（初級、中級、高級）</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 新增例句 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-quote-left"></i> 3. 新增例句（選填）</h4>
+                        
+                        <div class="example-sentences">
+                            <div class="sentence-type">
+                                <h5><i class="fas fa-font"></i> 英文例句</h5>
+                                <ul>
+                                    <li>輸入包含該單字的完整句子</li>
+                                    <li>確保語法正確，用法恰當</li>
+                                </ul>
+                            </div>
+
+                            <div class="sentence-type">
+                                <h5><i class="fas fa-language"></i> 中文例句翻譯</h5>
+                                <ul>
+                                    <li>提供例句的中文翻譯</li>
+                                    <li>幫助學習者理解用法</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>例句輸入區域截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+                    </div>
+
+                    <!-- 設定分類資訊 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-tags"></i> 4. 設定分類資訊</h4>
+                        
+                        <div class="category-settings">
+                            <div class="category-type">
+                                <h5><i class="fas fa-folder"></i> 單字分類</h5>
+                                <ul>
+                                    <li>選擇適當的分類標籤</li>
+                                    <li>可選擇多個分類</li>
+                                </ul>
+                            </div>
+
+                            <div class="category-type">
+                                <h5><i class="fas fa-bookmark"></i> 主題標籤</h5>
+                                <ul>
+                                    <li>選擇相關主題（如：動物、食物、顏色等）</li>
+                                    <li>方便後續搜尋和整理</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>分類設定介面截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+                    </div>
+
+                    <!-- 確認與儲存 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-star"></i> 5. 確認與儲存</h4>
+                        
+                        <div class="save-process">
+                            <div class="save-step">
+                                <div class="step-icon"><i class="fas fa-search"></i></div>
+                                <div class="step-content">
+                                    <h5>預覽檢查</h5>
+                                    <ul>
+                                        <li>仔細檢查所有輸入資訊</li>
+                                        <li>確認沒有拼寫錯誤</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="save-step">
+                                <div class="step-icon"><i class="fas fa-save"></i></div>
+                                <div class="step-content">
+                                    <h5>儲存操作</h5>
+                                    <ul>
+                                        <li>點擊「儲存」按鈕</li>
+                                        <li>等待系統確認新增成功</li>
+                                        <li>查看成功訊息提示</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>儲存確認頁面截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 編輯單字卡操作 -->
+            <section class="content-section">
+                <h2><i class="fas fa-edit"></i> 編輯單字卡操作</h2>
+
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> D. 編輯現有單字</h3>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>編輯單字功能介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="edit-workflow">
+                        <div class="edit-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>找到目標單字</h4>
+                                <ul>
+                                    <li>在單字列表中瀏覽</li>
+                                    <li>使用搜尋功能快速定位</li>
+                                    <li>點擊單字項目旁的「✏️ 編輯」按鈕</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="edit-step highlighted">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4><i class="fas fa-star"></i> 修改單字資訊</h4>
+                                <div class="modification-types">
+                                    <div class="mod-type">
+                                        <h5><i class="fas fa-info-circle"></i> 基本資訊修改</h5>
+                                        <ul>
+                                            <li>修正英文拼寫（如有錯誤）</li>
+                                            <li>更新中文翻譯</li>
+                                            <li>調整音標資訊</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mod-type">
+                                        <h5><i class="fas fa-plus-circle"></i> 內容擴充</h5>
+                                        <ul>
+                                            <li>新增或修改例句</li>
+                                            <li>更新分類標籤</li>
+                                            <li>調整難度等級</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edit-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>狀態控制</h4>
+                                <div class="status-control">
+                                    <h5><i class="fas fa-toggle-on"></i> 啟用/停用</h5>
+                                    <ul>
+                                        <li>切換單字的顯示狀態</li>
+                                        <li>停用的單字不會在前台顯示</li>
+                                        <li>但會保留在資料庫中</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edit-step highlighted">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4><i class="fas fa-star"></i> 儲存修改</h4>
+                                <ul>
+                                    <li>完成修改後點擊「更新」按鈕</li>
+                                    <li>確認修改已儲存成功</li>
+                                    <li>檢查前台是否已反映變更</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 刪除單字卡操作 -->
+            <section class="content-section">
+                <h2><i class="fas fa-trash-alt"></i> 刪除單字卡操作</h2>
+
+                <div class="topic-card warning-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> E. 刪除單字（謹慎操作）</h3>
+                    
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>刪除單字確認對話框截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="delete-workflow">
+                        <div class="delete-step">
+                            <div class="step-icon warning"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="step-content">
+                                <h4>1. 確認刪除必要性</h4>
+                                <div class="consideration-box">
+                                    <h5><i class="fas fa-think"></i> 刪除前考量</h5>
+                                    <ul>
+                                        <li>確認單字確實不再需要</li>
+                                        <li>考慮是否只需停用而非刪除</li>
+                                        <li>確認沒有學習者正在使用</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="delete-step">
+                            <div class="step-icon"><i class="fas fa-mouse-pointer"></i></div>
+                            <div class="step-content">
+                                <h4>2. 執行刪除操作</h4>
+                                <ul>
+                                    <li>點擊單字項目旁的「🗑️ 刪除」按鈕</li>
+                                    <li>系統會顯示確認對話框</li>
+                                    <li><strong class="warning-text">注意：此操作不可復原</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="delete-step critical">
+                            <div class="step-icon danger"><i class="fas fa-star"></i></div>
+                            <div class="step-content">
+                                <h4>3. 確認刪除</h4>
+                                <ul>
+                                    <li>仔細閱讀刪除警告訊息</li>
+                                    <li>確認要刪除的是正確的單字</li>
+                                    <li>點擊「確認刪除」完成操作</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 批量操作功能 -->
+            <section class="content-section">
+                <h2><i class="fas fa-layer-group"></i> 批量操作功能</h2>
+
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i> F. 批量管理單字</h3>
+                    
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>批量操作介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="batch-operations">
+                        <!-- 批量選擇 -->
+                        <div class="batch-section">
+                            <h4><i class="fas fa-check-square"></i> 1. 批量選擇</h4>
+                            <ul>
+                                <li>使用複選框選擇多個單字</li>
+                                <li>可使用「全選」功能</li>
+                                <li>確認選擇的單字正確</li>
+                            </ul>
+                        </div>
+
+                        <!-- 批量操作選項 -->
+                        <div class="batch-section">
+                            <h4><i class="fas fa-cogs"></i> 2. 批量操作選項</h4>
+                            
+                            <div class="batch-options">
+                                <div class="batch-option">
+                                    <div class="option-icon"><i class="fas fa-toggle-on"></i></div>
+                                    <div class="option-content">
+                                        <h5>批量啟用/停用</h5>
+                                        <ul>
+                                            <li>同時修改多個單字狀態</li>
+                                            <li>適合季節性內容管理</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="batch-option">
+                                    <div class="option-icon"><i class="fas fa-tags"></i></div>
+                                    <div class="option-content">
+                                        <h5>批量分類修改</h5>
+                                        <ul>
+                                            <li>為多個單字同時設定分類</li>
+                                            <li>提高管理效率</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="batch-option">
+                                    <div class="option-icon"><i class="fas fa-download"></i></div>
+                                    <div class="option-content">
+                                        <h5>批量匯出</h5>
+                                        <ul>
+                                            <li>將選擇的單字匯出為檔案</li>
+                                            <li>便於備份或轉移</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 批量匯入功能 -->
+                        <div class="batch-section">
+                            <h4><i class="fas fa-upload"></i> 3. 批量匯入功能</h4>
+                            
+                            <div class="import-process">
+                                <div class="import-step">
+                                    <div class="step-icon"><i class="fas fa-file-excel"></i></div>
+                                    <div class="step-content">
+                                        <h5>準備匯入檔案</h5>
+                                        <ul>
+                                            <li>使用指定格式的Excel或CSV檔案</li>
+                                            <li>確保檔案格式正確</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="import-step">
+                                    <div class="step-icon"><i class="fas fa-play-circle"></i></div>
+                                    <div class="step-content">
+                                        <h5>執行匯入</h5>
+                                        <ul>
+                                            <li>點擊「匯入單字」按鈕</li>
+                                            <li>選擇準備好的檔案</li>
+                                            <li>等待系統處理完成</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                                <i class="fas fa-image"></i>
+                                <p>批量匯入檔案選擇截圖</p>
+                                <small>點擊查看圖片上傳說明</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 操作技巧與最佳實務 -->
+            <section class="content-section">
+                <h2><i class="fas fa-lightbulb"></i> 操作技巧與最佳實務</h2>
+                
+                <div class="best-practices">
+                    <!-- 內容品質控制 -->
+                    <div class="practice-card">
+                        <h3><i class="fas fa-quality"></i> 內容品質控制</h3>
+                        
+                        <div class="quality-sections">
+                            <div class="quality-section">
+                                <h4><i class="fas fa-spell-check"></i> 1. 拼寫檢查</h4>
+                                <ul>
+                                    <li>使用線上字典確認拼寫</li>
+                                    <li>注意英美拼寫差異</li>
+                                    <li>保持同教材內的一致性</li>
+                                </ul>
+                            </div>
+
+                            <div class="quality-section">
+                                <h4><i class="fas fa-language"></i> 2. 翻譯準確性</h4>
+                                <ul>
+                                    <li>提供適合學習者程度的翻譯</li>
+                                    <li>避免過於複雜的解釋</li>
+                                    <li>考慮語境和文化差異</li>
+                                </ul>
+                            </div>
+
+                            <div class="quality-section">
+                                <h4><i class="fas fa-quote-left"></i> 3. 例句選擇</h4>
+                                <ul>
+                                    <li>選擇日常生活中常用的例句</li>
+                                    <li>確保例句語法正確</li>
+                                    <li>避免過於複雜的句型</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 分類管理策略 -->
+                    <div class="practice-card">
+                        <h3><i class="fas fa-sitemap"></i> 分類管理策略</h3>
+                        
+                        <div class="strategy-sections">
+                            <div class="strategy-section">
+                                <h4><i class="fas fa-ruler"></i> 1. 統一分類標準</h4>
+                                <ul>
+                                    <li>建立清楚的分類規則</li>
+                                    <li>保持分類的一致性</li>
+                                    <li>定期檢視分類架構</li>
+                                </ul>
+                            </div>
+
+                            <div class="strategy-section">
+                                <h4><i class="fas fa-tags"></i> 2. 標籤使用</h4>
+                                <ul>
+                                    <li>善用主題標籤功能</li>
+                                    <li>建立標籤使用指南</li>
+                                    <li>避免標籤過度細分</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>分類標籤管理介面截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 品質檢查建議 -->
+            <section class="content-section">
+                <h2><i class="fas fa-check-double"></i> 品質檢查建議</h2>
+                
+                <div class="quality-checks">
+                    <!-- 新增單字後的檢查 -->
+                    <div class="check-card">
+                        <h3><i class="fas fa-plus"></i> 新增單字後的檢查項目</h3>
+                        <div class="check-list">
+                            <div class="check-item">
+                                <div class="check-number">1</div>
+                                <div class="check-content">
+                                    <strong>拼寫確認</strong>：英文拼寫是否正確
+                                </div>
+                            </div>
+                            <div class="check-item">
+                                <div class="check-number">2</div>
+                                <div class="check-content">
+                                    <strong>翻譯檢查</strong>：中文翻譯是否準確適當
+                                </div>
+                            </div>
+                            <div class="check-item">
+                                <div class="check-number">3</div>
+                                <div class="check-content">
+                                    <strong>分類確認</strong>：分類標籤是否恰當
+                                </div>
+                            </div>
+                            <div class="check-item">
+                                <div class="check-number">4</div>
+                                <div class="check-content">
+                                    <strong>前台測試</strong>：在前台確認顯示正常
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 定期維護作業 -->
+                    <div class="check-card">
+                        <h3><i class="fas fa-calendar-check"></i> 定期維護作業</h3>
+                        <div class="maintenance-tasks">
+                            <div class="task-item">
+                                <i class="fas fa-search"></i>
+                                <span><strong>內容審查</strong>：定期檢視單字內容品質</span>
+                            </div>
+                            <div class="task-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span><strong>使用統計</strong>：分析哪些單字較少被學習</span>
+                            </div>
+                            <div class="task-item">
+                                <i class="fas fa-folder-open"></i>
+                                <span><strong>分類整理</strong>：整理和優化分類架構</span>
+                            </div>
+                            <div class="task-item">
+                                <i class="fas fa-copy"></i>
+                                <span><strong>重複檢查</strong>：檢查是否有重複的單字</span>
+                            </div>
+                        </div>
+
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>維護作業檢查清單截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常見問題解決 -->
+            <section class="content-section">
+                <h2><i class="fas fa-question-circle"></i> 常見問題解決</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Q1: 新增單字時系統顯示「單字已存在」？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>解決方法：</h5>
+                            <ul>
+                                <li><i class="fas fa-search"></i> 檢查是否該單字已在系統中</li>
+                                <li><i class="fas fa-list"></i> 搜尋現有單字列表確認</li>
+                                <li><i class="fas fa-edit"></i> 如需修改，請使用編輯功能</li>
+                                <li><i class="fas fa-text-height"></i> 確認大小寫是否影響判斷</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-eye-slash"></i>
+                            <span>Q2: 儲存後前台沒有顯示新單字？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>檢查步驟：</h5>
+                            <ul>
+                                <li><i class="fas fa-toggle-on"></i> 確認單字狀態已設為「啟用」</li>
+                                <li><i class="fas fa-book"></i> 檢查該教材是否在前台顯示</li>
+                                <li><i class="fas fa-key"></i> 確認用戶權限是否能看到該內容</li>
+                                <li><i class="fas fa-sync-alt"></i> 嘗試重新整理前台頁面</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-upload"></i>
+                            <span>Q3: 批量匯入失敗？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>常見原因與解決：</h5>
+                            <ul>
+                                <li><i class="fas fa-file-excel"></i> 檔案格式不正確：使用指定的範本格式</li>
+                                <li><i class="fas fa-exclamation-triangle"></i> 資料內容有誤：檢查必填欄位是否完整</li>
+                                <li><i class="fas fa-weight-hanging"></i> 檔案過大：分批匯入較大的檔案</li>
+                                <li><i class="fas fa-wifi"></i> 網路問題：確認網路連線穩定</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-sync"></i>
+                            <span>Q4: 編輯後資料沒有更新？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>檢查項目：</h5>
+                            <ul>
+                                <li><i class="fas fa-save"></i> 確認有點擊「更新」或「儲存」按鈕</li>
+                                <li><i class="fas fa-network-wired"></i> 檢查網路連線狀態</li>
+                                <li><i class="fas fa-trash"></i> 確認沒有瀏覽器快取問題</li>
+                                <li><i class="fas fa-redo"></i> 重新整理頁面查看最新狀態</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教學檢查清單 -->
+            <section class="content-section">
+                <h2><i class="fas fa-clipboard-check"></i> 教學檢查清單</h2>
+                
+                <div class="checklist-container">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-mgmt-check1">
+                        <label for="vocab-mgmt-check1">能進入單字管理功能</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-mgmt-check2">
+                        <label for="vocab-mgmt-check2">能選擇目標教材</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-mgmt-check3">
+                        <label for="vocab-mgmt-check3">能新增單字卡並填寫完整資訊</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-mgmt-check4">
+                        <label for="vocab-mgmt-check4">能編輯現有單字內容</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-mgmt-check5">
+                        <label for="vocab-mgmt-check5">了解刪除操作的風險和步驟</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-mgmt-check6">
+                        <label for="vocab-mgmt-check6">能使用批量操作功能</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-mgmt-check7">
+                        <label for="vocab-mgmt-check7">知道如何匯入匯出單字資料</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="vocab-mgmt-check8">
+                        <label for="vocab-mgmt-check8">能處理常見操作問題</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 相關功能學習 -->
+            <section class="content-section">
+                <h2><i class="fas fa-link"></i> 相關功能學習</h2>
+                
+                <div class="related-topics">
+                    <div class="topic-link-card">
+                        <div class="topic-type">基礎操作</div>
+                        <h4>後台主控台介紹</h4>
+                        <p>了解後台基本功能和導航方式</p>
+                        <a href="admin-guide.html" class="topic-link">前往學習</a>
+                    </div>
+                    
+                    <div class="topic-link-card">
+                        <div class="topic-type">進階功能</div>
+                        <h4>音檔批量生成</h4>
+                        <p>學習如何為單字批量生成TTS音檔</p>
+                        <a href="audio-generation.html" class="topic-link">前往學習</a>
+                    </div>
+                    
+                    <div class="topic-link-card">
+                        <div class="topic-type">內容管理</div>
+                        <h4>教材管理</h4>
+                        <p>學習如何管理和組織教學材料</p>
+                        <a href="content-management.html" class="topic-link">前往學習</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 頁面底部導航 -->
+            <nav class="page-navigation">
+                <a href="admin-guide.html" class="nav-prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>上一頁：後台登入與權限驗證</span>
+                </a>
+                <a href="../index.html" class="nav-next">
+                    <span>返回首頁</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </nav>
+        </main>
+
+        <!-- 頁腳 -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 ESL學習平台教學網站 - 專為ESL學習者設計的完整操作指南</p>
+                <div class="footer-links">
+                    <a href="../index.html">返回首頁</a>
+                    <a href="#top">回到頂部</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

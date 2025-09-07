@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>點讀功能操作 - ESL學習平台教學網站</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 頂部導航 -->
+        <nav class="top-nav">
+            <a href="../index.html" class="nav-logo">
+                <i class="fas fa-home"></i>
+                教學網站首頁
+            </a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- 主要內容 -->
+        <main class="main-content">
+            <!-- 頁面標題 -->
+            <header class="page-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">首頁</a>
+                    <span>/</span>
+                    <a href="../index.html#frontend">前台操作</a>
+                    <span>/</span>
+                    <span>點讀功能操作</span>
+                </div>
+                <h1><i class="fas fa-book-reader"></i> 點讀功能操作教學</h1>
+                <div class="page-meta">
+                    <span class="tag"><i class="fas fa-bullseye"></i> 學習目標：掌握平台的核心學習功能 - 點讀操作，學會如何進行互動式閱讀學習</span>
+                    <span class="tag"><i class="fas fa-users"></i> 適用對象：學生、家長、老師</span>
+                </div>
+            </header>
+
+            <!-- 點讀功能簡介 -->
+            <section class="content-section">
+                <h2><i class="fas fa-book-open"></i> 點讀功能簡介</h2>
+                <div class="topic-card">
+                    <p>點讀功能是本平台的核心學習工具，讓使用者可以：</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-volume-up"></i>
+                            <span>點擊文字聽到標準發音</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-microphone"></i>
+                            <span>進行跟讀練習</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-music"></i>
+                            <span>學習正確的語音語調</span>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>點讀功能介面總覽截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 完整操作流程 -->
+            <section class="content-section">
+                <h2><i class="fas fa-play-circle"></i> 完整操作流程</h2>
+
+                <!-- 進入點讀模式 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> A. 進入點讀模式</h3>
+                    
+                    <div class="entry-methods">
+                        <div class="method-item">
+                            <h4><i class="fas fa-home"></i> 1. 從首頁進入</h4>
+                            <div class="method-options">
+                                <div class="option-item">
+                                    <div class="option-header">方法一：直接點擊教材</div>
+                                    <div class="option-flow">
+                                        <span class="step">點擊教材預覽圖片</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                        <span class="step">直接進入該教材</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="option-item">
+                                    <div class="option-header">方法二：透過選單</div>
+                                    <div class="option-flow">
+                                        <span class="step">點擊「閱讀學習」</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                        <span class="step">選擇教材</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="method-item">
+                            <h4><i class="fas fa-download"></i> 2. 教材載入</h4>
+                            <ul>
+                                <li>等待教材頁面完全載入</li>
+                                <li>可看到課文內容和相關圖片</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>進入點讀模式的步驟截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+                </div>
+
+                <!-- 基本點讀操作 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> B. 基本點讀操作</h3>
+
+                    <!-- 單字點讀 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-spell-check"></i> 1. 單字點讀</h4>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>單字點讀操作示範截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="operation-steps">
+                            <h5>操作步驟：</h5>
+                            <div class="step-grid">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">找到想要聽發音的單字</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">用手指/滑鼠點擊該單字</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">系統自動播放該單字的標準發音</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">單字會短暫高亮顯示</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-highlight">
+                            <h5><i class="fas fa-repeat"></i> 重複聆聽</h5>
+                            <ul>
+                                <li>可重複點擊同一單字多次聆聽</li>
+                                <li>沒有次數限制</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 句子點讀 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-comments"></i> 2. 句子點讀</h4>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>句子點讀操作示範截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="operation-steps">
+                            <h5>操作步驟：</h5>
+                            <div class="step-grid">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">點擊想要聆聽的句子</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">系統播放整句發音</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">句子會以不同顏色標示</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 段落點讀 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-paragraph"></i> 3. 段落點讀</h4>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>段落點讀操作示範截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="operation-steps">
+                            <h5>操作步驟：</h5>
+                            <div class="step-grid">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">點擊段落區域</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">系統按順序朗讀整個段落</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">朗讀時會逐句高亮顯示</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 進階點讀功能 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-star"></i> C. 進階點讀功能</h3>
+
+                    <!-- 跟讀模式 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-microphone"></i> 1. 跟讀模式</h4>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>跟讀模式介面截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="activation-method">
+                            <h5><i class="fas fa-power-off"></i> 啟動方法：</h5>
+                            <ul>
+                                <li>找到「跟讀」按鈕並點擊</li>
+                                <li>或在設定中選擇跟讀模式</li>
+                            </ul>
+                        </div>
+
+                        <div class="operation-steps">
+                            <h5>使用步驟：</h5>
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">點擊文字聽到示範發音</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">按住麥克風按鈕開始錄音</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">跟著朗讀剛聽到的內容</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">放開按鈕結束錄音</div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">系統播放您的錄音進行比對</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 翻頁操作 -->
+                    <div class="sub-topic">
+                        <h4><i class="fas fa-book"></i> 2. 頁面翻頁操作 ⭐</h4>
+                        
+                        <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                            <i class="fas fa-image"></i>
+                            <p>翻頁操作介面截圖</p>
+                            <small>點擊查看圖片上傳說明</small>
+                        </div>
+
+                        <div class="page-controls">
+                            <div class="control-item">
+                                <h5><i class="fas fa-chevron-right"></i> 翻到下一頁</h5>
+                                <ul>
+                                    <li>點擊頁面右側區域</li>
+                                    <li>或點擊「下一頁」按鈕（箭頭向右）</li>
+                                </ul>
+                            </div>
+
+                            <div class="control-item">
+                                <h5><i class="fas fa-chevron-left"></i> 翻到上一頁</h5>
+                                <ul>
+                                    <li>點擊頁面左側區域</li>
+                                    <li>或點擊「上一頁」按鈕（箭頭向左）</li>
+                                </ul>
+                            </div>
+
+                            <div class="control-item">
+                                <h5><i class="fas fa-fast-forward"></i> 快速跳頁</h5>
+                                <ul>
+                                    <li>使用頁面指示器（如果有的話）</li>
+                                    <li>直接跳到指定頁面</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 閱讀控制功能 -->
+                <div class="topic-card">
+                    <h3><i class="fas fa-sliders-h"></i> D. 閱讀控制功能</h3>
+
+                    <div class="image-placeholder" onclick="showImageUploadInstructions(this)">
+                        <i class="fas fa-image"></i>
+                        <p>閱讀控制介面截圖</p>
+                        <small>點擊查看圖片上傳說明</small>
+                    </div>
+
+                    <div class="control-sections">
+                        <!-- 播放控制 -->
+                        <div class="control-section">
+                            <h4><i class="fas fa-play"></i> 1. 播放控制</h4>
+                            <div class="control-grid">
+                                <div class="control-card">
+                                    <div class="control-icon"><i class="fas fa-play-circle"></i></div>
+                                    <div class="control-text">
+                                        <strong>播放/暫停</strong><br>
+                                        點擊播放按鈕
+                                    </div>
+                                </div>
+                                <div class="control-card">
+                                    <div class="control-icon"><i class="fas fa-stop-circle"></i></div>
+                                    <div class="control-text">
+                                        <strong>停止</strong><br>
+                                        點擊停止按鈕
+                                    </div>
+                                </div>
+                                <div class="control-card">
+                                    <div class="control-icon"><i class="fas fa-volume-up"></i></div>
+                                    <div class="control-text">
+                                        <strong>調整音量</strong><br>
+                                        拖動音量滑桿
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 速度控制 -->
+                        <div class="control-section">
+                            <h4><i class="fas fa-tachometer-alt"></i> 2. 速度控制</h4>
+                            <div class="speed-control">
+                                <h5>調整播放速度：</h5>
+                                <div class="speed-steps">
+                                    <div class="speed-step">
+                                        <span class="step-num">1</span>
+                                        <span>找到速度控制按鈕（通常顯示1x）</span>
+                                    </div>
+                                    <div class="speed-step">
+                                        <span class="step-num">2</span>
+                                        <span>點擊切換不同速度（0.8x, 1x, 1.2x等）</span>
+                                    </div>
+                                    <div class="speed-step">
+                                        <span class="step-num">3</span>
+                                        <span>選擇適合的學習速度</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 學習策略建議 -->
+            <section class="content-section">
+                <h2><i class="fas fa-lightbulb"></i> 學習策略建議</h2>
+                
+                <div class="strategy-grid">
+                    <!-- 給學生的建議 -->
+                    <div class="strategy-card student">
+                        <div class="strategy-icon"><i class="fas fa-user-graduate"></i></div>
+                        <h3>👶 給學生的使用技巧</h3>
+                        <div class="strategy-list">
+                            <div class="strategy-item">
+                                <span class="strategy-number">1</span>
+                                <div class="strategy-content">
+                                    <strong>先聽再讀</strong>：點擊文字先聽發音，再跟著讀
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-number">2</span>
+                                <div class="strategy-content">
+                                    <strong>重複練習</strong>：同一個單字可以點擊多次熟悉發音
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-number">3</span>
+                                <div class="strategy-content">
+                                    <strong>逐步學習</strong>：從單字 → 片語 → 句子 → 段落
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-number">4</span>
+                                <div class="strategy-content">
+                                    <strong>錄音比對</strong>：使用跟讀功能檢查自己的發音
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 給家長的建議 -->
+                    <div class="strategy-card parent">
+                        <div class="strategy-icon"><i class="fas fa-users"></i></div>
+                        <h3>👨‍👩‍👧‍👦 給家長的指導建議</h3>
+                        <div class="strategy-list">
+                            <div class="strategy-item">
+                                <span class="strategy-number">1</span>
+                                <div class="strategy-content">
+                                    <strong>陪同練習</strong>：初期陪孩子一起操作和學習
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-number">2</span>
+                                <div class="strategy-content">
+                                    <strong>鼓勵模仿</strong>：鼓勵孩子模仿標準發音
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-number">3</span>
+                                <div class="strategy-content">
+                                    <strong>設定目標</strong>：每天完成固定頁數或時間的點讀練習
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-number">4</span>
+                                <div class="strategy-content">
+                                    <strong>檢查進度</strong>：定期檢查孩子的學習記錄
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 給老師的建議 -->
+                    <div class="strategy-card teacher">
+                        <div class="strategy-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3>👨‍🏫 給老師的教學建議</h3>
+                        <div class="strategy-list">
+                            <div class="strategy-item">
+                                <span class="strategy-number">1</span>
+                                <div class="strategy-content">
+                                    <strong>示範操作</strong>：課堂上示範正確的點讀操作方式
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-number">2</span>
+                                <div class="strategy-content">
+                                    <strong>分組練習</strong>：讓學生分組進行點讀練習和比較
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-number">3</span>
+                                <div class="strategy-content">
+                                    <strong>設計活動</strong>：結合點讀功能設計課堂互動活動
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-number">4</span>
+                                <div class="strategy-content">
+                                    <strong>追蹤進度</strong>：使用系統記錄追蹤學生的點讀練習情況
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常見問題解決 -->
+            <section class="content-section">
+                <h2><i class="fas fa-question-circle"></i> 常見問題解決</h2>
+                
+                <div class="faq-container">
+                    <!-- 問題1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-volume-mute"></i>
+                            <span>Q1: 點擊文字沒有聲音怎麼辦？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>檢查步驟：</h5>
+                            <ul class="troubleshooting-list">
+                                <li><i class="fas fa-volume-up"></i> 確認設備音量已開啟</li>
+                                <li><i class="fas fa-chrome"></i> 檢查瀏覽器是否允許播放音頻</li>
+                                <li><i class="fas fa-wifi"></i> 確認網路連線穩定</li>
+                                <li><i class="fas fa-sync-alt"></i> 重新載入頁面</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 問題2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-signal"></i>
+                            <span>Q2: 聲音播放斷斷續續怎麼辦？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>解決方法：</h5>
+                            <ul class="troubleshooting-list">
+                                <li><i class="fas fa-tachometer-alt"></i> 檢查網路連線速度</li>
+                                <li><i class="fas fa-window-close"></i> 關閉其他佔用網路的應用程式</li>
+                                <li><i class="fas fa-trash"></i> 清除瀏覽器快取</li>
+                                <li><i class="fas fa-compress-alt"></i> 嘗試降低播放品質</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 問題3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-microphone-slash"></i>
+                            <span>Q3: 跟讀功能無法使用？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>檢查步驟：</h5>
+                            <ul class="troubleshooting-list">
+                                <li><i class="fas fa-key"></i> 確認瀏覽器已允許麥克風權限</li>
+                                <li><i class="fas fa-microphone"></i> 檢查設備麥克風是否正常工作</li>
+                                <li><i class="fas fa-ban"></i> 確認沒有其他應用程式佔用麥克風</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 問題4 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Q4: 翻頁功能失效？</span>
+                        </div>
+                        <div class="faq-answer">
+                            <h5>解決方法：</h5>
+                            <ul class="troubleshooting-list">
+                                <li><i class="fas fa-hourglass-half"></i> 確認頁面完全載入完成</li>
+                                <li><i class="fas fa-redo"></i> 嘗試重新整理頁面</li>
+                                <li><i class="fas fa-network-wired"></i> 檢查網路連線狀態</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 練習建議 -->
+            <section class="content-section">
+                <h2><i class="fas fa-dumbbell"></i> 練習建議</h2>
+                
+                <div class="practice-sections">
+                    <!-- 初學者練習 -->
+                    <div class="practice-card beginner">
+                        <h3><i class="fas fa-seedling"></i> 初學者練習步驟</h3>
+                        
+                        <div class="weekly-plan">
+                            <div class="week-item">
+                                <div class="week-header">
+                                    <span class="week-number">第1週</span>
+                                    <span class="week-title">單字基礎</span>
+                                </div>
+                                <div class="week-content">
+                                    熟悉單字點讀，每天練習10-15個單字
+                                </div>
+                            </div>
+
+                            <div class="week-item">
+                                <div class="week-header">
+                                    <span class="week-number">第2週</span>
+                                    <span class="week-title">句子理解</span>
+                                </div>
+                                <div class="week-content">
+                                    嘗試句子點讀，理解句子結構
+                                </div>
+                            </div>
+
+                            <div class="week-item">
+                                <div class="week-header">
+                                    <span class="week-number">第3週</span>
+                                    <span class="week-title">發音練習</span>
+                                </div>
+                                <div class="week-content">
+                                    開始使用跟讀功能，練習發音
+                                </div>
+                            </div>
+
+                            <div class="week-item">
+                                <div class="week-header">
+                                    <span class="week-number">第4週</span>
+                                    <span class="week-title">綜合運用</span>
+                                </div>
+                                <div class="week-content">
+                                    綜合練習，結合所有功能進行學習
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 進階練習目標 -->
+                    <div class="practice-card advanced">
+                        <h3><i class="fas fa-trophy"></i> 進階練習目標</h3>
+                        
+                        <div class="goal-list">
+                            <div class="goal-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>能流暢操作所有點讀功能</span>
+                            </div>
+                            <div class="goal-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>能有效使用跟讀功能改善發音</span>
+                            </div>
+                            <div class="goal-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>能根據學習需求調整播放速度</span>
+                            </div>
+                            <div class="goal-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>能獨立完成整篇文章的點讀學習</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 教學檢查清單 -->
+            <section class="content-section">
+                <h2><i class="fas fa-clipboard-check"></i> 教學檢查清單</h2>
+                
+                <div class="checklist-container">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="reading-check1">
+                        <label for="reading-check1">能成功進入點讀模式</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="reading-check2">
+                        <label for="reading-check2">能點擊單字聽到發音</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="reading-check3">
+                        <label for="reading-check3">能點擊句子進行聆聽</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="reading-check4">
+                        <label for="reading-check4">能使用翻頁功能</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="reading-check5">
+                        <label for="reading-check5">能啟動和使用跟讀模式</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="reading-check6">
+                        <label for="reading-check6">能調整播放速度和音量</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="reading-check7">
+                        <label for="reading-check7">知道如何解決常見問題</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 相關學習主題 -->
+            <section class="content-section">
+                <h2><i class="fas fa-link"></i> 相關學習主題</h2>
+                
+                <div class="related-topics">
+                    <div class="topic-link-card">
+                        <div class="topic-type">前置學習</div>
+                        <h4>首頁功能介紹</h4>
+                        <p>了解平台基本功能和導航方式</p>
+                        <a href="homepage-guide.html" class="topic-link">前往學習</a>
+                    </div>
+                    
+                    <div class="topic-link-card">
+                        <div class="topic-type">搭配功能</div>
+                        <h4>單字卡學習</h4>
+                        <p>結合點讀功能進行詞彙強化練習</p>
+                        <a href="vocabulary-guide.html" class="topic-link">前往學習</a>
+                    </div>
+                    
+                    <div class="topic-link-card">
+                        <div class="topic-type">延伸學習</div>
+                        <h4>互動遊戲</h4>
+                        <p>透過遊戲化學習加深點讀練習效果</p>
+                        <a href="games-guide.html" class="topic-link">前往學習</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 頁面底部導航 -->
+            <nav class="page-navigation">
+                <a href="settings-guide.html" class="nav-prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>上一頁：設定頁面使用</span>
+                </a>
+                <a href="vocabulary-guide.html" class="nav-next">
+                    <span>下一頁：單字卡學習</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </nav>
+        </main>
+
+        <!-- 頁腳 -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 ESL學習平台教學網站 - 專為ESL學習者設計的完整操作指南</p>
+                <div class="footer-links">
+                    <a href="../index.html">返回首頁</a>
+                    <a href="#top">回到頂部</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
